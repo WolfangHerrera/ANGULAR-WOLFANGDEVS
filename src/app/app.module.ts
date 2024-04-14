@@ -1,24 +1,23 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BodyComponent } from './home/body/body.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { AboutComponent } from './home/about/about.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { BodyComponent } from "./home/body/body.component";
+import { HeaderComponent } from "./shared/header/header.component";
+import { AboutComponent } from "./home/about/about.component";
+import { ExperienceComponent } from "./home/experience/experience.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     BodyComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+    ExperienceComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
