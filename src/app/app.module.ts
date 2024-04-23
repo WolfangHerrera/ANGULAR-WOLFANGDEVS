@@ -7,6 +7,7 @@ import { BodyComponent } from "./home/body/body.component";
 import { HeaderComponent } from "./shared/header/header.component";
 import { AboutComponent } from "./home/about/about.component";
 import { ExperienceComponent } from "./home/experience/experience.component";
+import { PortfolioComponent } from './home/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ExperienceComponent } from "./home/experience/experience.component";
     HeaderComponent,
     AboutComponent,
     ExperienceComponent,
+    PortfolioComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
