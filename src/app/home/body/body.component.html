@@ -43,9 +43,9 @@
                     </svg>
                 </a>
             </div>
-            <a href="/assets/CV-WH.pdf" download="CV - Wolfang Herrera.pdf"><button type="button"
-                    class="btn rounded-pill my-3 px-4" style="background-color: #5c469c; color: white;">DOWNLOAD
-                    CV</button></a>
+            <button (click)="downloadFile()" type="button" class="btn rounded-pill my-3 px-4"
+                style="background-color: #5c469c; color: white;">DOWNLOAD
+                CV</button>
         </div>
     </div>
 </section>
@@ -90,11 +90,11 @@
                     </svg>
                 </a>
             </div>
-            <a href="/assets/CV-WH.pdf" download="CV - Wolfang Herrera.pdf">
-                <button type="button" class="btn rounded-pill my-3 px-4"
-                    style="background-color: #5c469c; color: white;">DOWNLOAD
-                    CV</button>
-            </a>
+
+            <button (click)="downloadFile()" type="button" class="btn rounded-pill my-3 px-4"
+                style="background-color: #5c469c; color: white;">DOWNLOAD
+                CV</button>
+
         </div>
         <div class="col-md-6 col-lg-6 my-3 text-end">
             <img src="./assets/FOTO-ANDREY.png" style="border: 12px solid #5c469c; border-radius: 50%;" alt=""
