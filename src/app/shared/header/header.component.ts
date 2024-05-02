@@ -1,24 +1,24 @@
-import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
-
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  OnInit,
+  Output,
+  ViewChild,
+} from "@angular/core";
 @Component({
   selector: "app-header",
   templateUrl: "./header.component.html",
   styleUrls: ["./header.component.scss"],
 })
-export class HeaderComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-
+export class HeaderComponent {
   @ViewChild("home") home!: ElementRef;
   @ViewChild("about") about!: ElementRef;
   @ViewChild("contact") contact!: ElementRef;
   @ViewChild("portfolio") portfolio!: ElementRef;
+  @Output() dataSent = new EventEmitter<string>();
 
-  scrollToComponent(component: ElementRef) {
-    component.nativeElement.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+  scrollToComponent(component: string) {
+    this.dataSent.emit(component);
   }
 }
