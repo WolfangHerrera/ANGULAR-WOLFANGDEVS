@@ -4,7 +4,7 @@
 
 ---
 
-![](docs/Preview-README.jpg)
+[![](docs/Preview-README.jpg)](https://github.com/WolfangHerrera/ANGULAR-WOLFANG-APP)
 
 ---
 
