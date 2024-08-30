@@ -24,14 +24,15 @@
 
                     <div class="col-sm-12 d-lg-none d-flex justify-content-center text-center">
                         <div class="px-2">
-                            <button type="submit" id="whatsapp" class="btn rounded-pill my-3 px-4"
+                            <button (click)="eventButtonWhatsapp()">type="submit" id="whatsapp"
+                                class="btn rounded-pill my-3 px-4"
                                 style="background-color: #5c469c; color: white;">
                                 <i class="bi bi-whatsapp"></i>
                             </button>
                         </div>
                         <div class="px-2">
-                            <button type="submit" id="email" class="btn rounded-pill my-3 px-4"
-                                style="background-color: #5c469c; color: white;">
+                            <button (click)="eventButtonMail()" type="submit" id="email"
+                                class="btn rounded-pill my-3 px-4" style="background-color: #5c469c; color: white;">
                                 <i class="bi bi-envelope"></i>
                             </button>
                         </div>
@@ -39,14 +40,14 @@
 
                     <div class="col-md-12 col-lg-12 d-none d-lg-flex justify-content-center text-center">
                         <div class="px-2">
-                            <button type="submit" id="whatsapp" class="btn rounded-pill my-3 px-4"
-                                style="background-color: #5c469c; color: white;">
+                            <button (click)="eventButtonWhatsapp()" type="submit" id="whatsapp"
+                                class="btn rounded-pill my-3 px-4" style="background-color: #5c469c; color: white;">
                                 <i class="bi bi-whatsapp"></i> CONTACT ME VIA WHATSAPP
                             </button>
                         </div>
                         <div class="px-2">
-                            <button type="submit" id="email" class="btn rounded-pill my-3 px-4"
-                                style="background-color: #5c469c; color: white;">
+                            <button (click)="eventButtonMail()" type="submit" id="email"
+                                class="btn rounded-pill my-3 px-4" style="background-color: #5c469c; color: white;">
                                 <i class="bi bi-envelope"></i> CONTACT ME VIA MAIL
                             </button>
                         </div>

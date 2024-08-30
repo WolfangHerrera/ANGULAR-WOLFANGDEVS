@@ -7,11 +7,28 @@ import { ContactForm } from "./contact.model";
   styleUrls: ["./contact.component.scss"],
 })
 export class ContactComponent {
+  urlWhatsapp = "";
+  urlMail = "";
   contact: ContactForm = {
     name: "",
     subject: "",
     message: "",
   };
+
+  constructor() {
+    this.eventButtonWhatsapp();
+    this.eventButtonMail();
+  }
+
+  eventButtonWhatsapp() {
+    this.urlWhatsapp = this.createWhatsappLink(this.contact);
+    window.open(this.urlWhatsapp, "_blank", "noopener,noreferrer");
+  }
+
+  eventButtonMail() {
+    this.urlMail = this.createMailtoLink(this.contact);
+    window.open(this.urlMail, "_blank", "noopener,noreferrer");
+  }
 
   createWhatsappLink(contact: ContactForm): string {
     if (!contact.name && !contact.subject) {
@@ -21,7 +38,11 @@ export class ContactComponent {
         message: "Thanks.",
       };
     }
-    return `https://api.whatsapp.com/send?phone=3134508305&text=Hey, I'm ${contact.name}, So I would like to know: ${contact.subject}. ${contact.message}`;
+    const text = `Hey, I'm ${contact.name}, So I would like to know: ${contact.subject}. ${contact.message}`;
+    const encodedText = encodeURIComponent(text);
+    console.log(text);
+
+    return `https://wa.me/+573134508305?text=${encodedText}`;
   }
 
   createMailtoLink(contact: ContactForm): string {
@@ -43,11 +64,9 @@ export class ContactComponent {
     const buttonId = activeElement.id;
 
     if (buttonId === "whatsapp") {
-      const whatsapp = this.createWhatsappLink(this.contact);
-      window.open(whatsapp, "_blank");
+      this.urlWhatsapp = this.createWhatsappLink(this.contact);
     } else if (buttonId === "email") {
-      const mailto = this.createMailtoLink(this.contact);
-      window.open(mailto, "_blank");
+      this.urlMail = this.createMailtoLink(this.contact);
     }
   }
 }
