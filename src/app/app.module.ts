@@ -7,9 +7,10 @@ import { BodyComponent } from "./home/body/body.component";
 import { HeaderComponent } from "./shared/header/header.component";
 import { AboutComponent } from "./home/about/about.component";
 import { ExperienceComponent } from "./home/experience/experience.component";
-import { PortfolioComponent } from './home/portfolio/portfolio.component';
-import { ContactComponent } from './home/contact/contact.component';
-import { FooterComponent } from './shared/footer/footer.component';
+import { PortfolioComponent } from "./home/portfolio/portfolio.component";
+import { ContactComponent } from "./home/contact/contact.component";
+import { FooterComponent } from "./shared/footer/footer.component";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     ContactComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
