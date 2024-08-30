@@ -13,24 +13,41 @@ export class ContactComponent {
     message: "",
   };
 
+  createWhatsappLink(contact: ContactForm): string {
+    if (!contact.name && !contact.subject) {
+      contact = {
+        name: "WolfangDevs",
+        subject: "Your services like as Freelancer",
+        message: "Thanks.",
+      };
+    }
+    return `https://api.whatsapp.com/send?phone=3134508305&text=Hey, I'm ${contact.name}, So I would like to know: ${contact.subject}. ${contact.message}`;
+  }
+
+  createMailtoLink(contact: ContactForm): string {
+    if (!contact.name && !contact.subject && !contact.message) {
+      contact = {
+        name: "WolfangDevs",
+        subject: "Your services like as Freelancer",
+        message: "Thanks.",
+      };
+    }
+    const encodedSubject = encodeURIComponent(contact.subject);
+    const encodedBody = encodeURIComponent(contact.message);
+    return `mailto:andreyherrerac@icloud.com?subject=${encodedSubject}&body=${encodedBody}`;
+  }
+
   onSubmit(event: Event) {
-    event.preventDefault();  // Prevenir el comportamiento por defecto del formulario
-
-    const target = event.target as HTMLFormElement;
+    event.preventDefault();
     const activeElement = document.activeElement as HTMLButtonElement;
+    const buttonId = activeElement.id;
 
-    const buttonId = activeElement.id;  // Obtener el id del botón presionado
-
-    console.log('Formulario enviado', this.contact);
-    console.log('Botón presionado:', buttonId);
-
-    // Aquí puedes manejar la lógica según el botón presionado
-    if (buttonId === 'whatsapp-mobile' || buttonId === 'whatsapp-desktop') {
-      // Lógica para el botón de WhatsApp
-      console.log('Enviar mensaje de WhatsApp');
-    } else if (buttonId === 'email-mobile' || buttonId === 'email-desktop') {
-      // Lógica para el botón de Email
-      console.log('Enviar mensaje por Email');
+    if (buttonId === "whatsapp") {
+      const whatsapp = this.createWhatsappLink(this.contact);
+      window.open(whatsapp, "_blank");
+    } else if (buttonId === "email") {
+      const mailto = this.createMailtoLink(this.contact);
+      window.open(mailto, "_blank");
     }
   }
 }
