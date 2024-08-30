@@ -21,7 +21,7 @@ export class ContactComponent {
         message: "Thanks.",
       };
     }
-    return `https://api.whatsapp.com/send?phone=3134508305&text=Hey, I'm ${contact.name}, So I would like to know: ${contact.subject}. ${contact.message}`;
+    return `https://wa.me/+573134508305&text=Hey, I'm ${contact.name}, So I would like to know: ${contact.subject}. ${contact.message}`;
   }
 
   createMailtoLink(contact: ContactForm): string {
