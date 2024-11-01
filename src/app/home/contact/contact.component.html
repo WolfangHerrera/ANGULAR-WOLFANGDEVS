@@ -4,49 +4,52 @@
             <h2>CONTACT ME</h2>
         </div>
         <div class="col-lg-9">
-            <form>
+            <form (ngSubmit)="onSubmit($event)" #contactForm="ngForm">
                 <div class="row g-3">
                     <div class="col-12">
                         <label for="your-name" class="form-label">YOUR NAME</label>
-                        <input type="text" class="form-control" id="your-name" name="your-name" required>
+                        <input type="text" class="form-control" id="your-name" name="name" [(ngModel)]="contact.name"
+                            required>
                     </div>
                     <div class="col-12">
                         <label for="your-subject" class="form-label">YOUR SUBJECT</label>
-                        <input type="text" class="form-control" id="your-subject" name="your-subject">
+                        <input type="text" class="form-control" id="your-subject" name="subject"
+                            [(ngModel)]="contact.subject">
                     </div>
                     <div class="col-12">
                         <label for="your-message" class="form-label">YOUR MESSAGE</label>
-                        <textarea class="form-control" id="your-message" name="your-message" rows="5"
-                            required></textarea>
+                        <textarea class="form-control" id="your-message" name="message" rows="5"
+                            [(ngModel)]="contact.message" required></textarea>
                     </div>
+
                     <div class="col-sm-12 d-lg-none d-flex justify-content-center text-center">
                         <div class="px-2">
-                            <button type="button" class="btn rounded-pill my-3 px-4"
-                                style="background-color: #5c469c; color: white;"><i class="bi bi-whatsapp"></i></button>
+                            <button (click)="eventButtonWhatsapp()">type="submit" id="whatsapp"
+                                class="btn rounded-pill my-3 px-4"
+                                style="background-color: #5c469c; color: white;">
+                                <i class="bi bi-whatsapp"></i>
+                            </button>
                         </div>
                         <div class="px-2">
-                            <button type="button" class="btn rounded-pill my-3 px-4"
-                                style="background-color: #5c469c; color: white;"><i class="bi bi-envelope"></i>
+                            <button (click)="eventButtonMail()" type="submit" id="email"
+                                class="btn rounded-pill my-3 px-4" style="background-color: #5c469c; color: white;">
+                                <i class="bi bi-envelope"></i>
                             </button>
                         </div>
                     </div>
 
                     <div class="col-md-12 col-lg-12 d-none d-lg-flex justify-content-center text-center">
                         <div class="px-2">
-                            <a href="https://wa.me/+573134508305">
-                                <button type="button" class="btn rounded-pill my-3 px-4"
-                                    style="background-color: #5c469c; color: white;"><i class="bi bi-whatsapp"></i>
-                                    CONTACT ME VIA WHATSAPP</button>
-                            </a>
+                            <button (click)="eventButtonWhatsapp()" type="submit" id="whatsapp"
+                                class="btn rounded-pill my-3 px-4" style="background-color: #5c469c; color: white;">
+                                <i class="bi bi-whatsapp"></i> CONTACT ME VIA WHATSAPP
+                            </button>
                         </div>
                         <div class="px-2">
-                            <a href="mailto:andreyherrerac@icloud.com">
-                                <button type="button" class="btn rounded-pill my-3 px-4"
-                                    style="background-color: #5c469c; color: white;"><i class="bi bi-envelope"></i>
-                                    CONTACT
-                                    ME
-                                    VIA MAIL</button>
-                            </a>
+                            <button (click)="eventButtonMail()" type="submit" id="email"
+                                class="btn rounded-pill my-3 px-4" style="background-color: #5c469c; color: white;">
+                                <i class="bi bi-envelope"></i> CONTACT ME VIA MAIL
+                            </button>
                         </div>
                     </div>
                 </div>

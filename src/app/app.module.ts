@@ -11,6 +11,7 @@ import { PortfolioComponent } from "./home/portfolio/portfolio.component";
 import { ContactComponent } from "./home/contact/contact.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { LanguageComponent } from "./shared/language/language/language.component";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { LanguageComponent } from "./shared/language/language/language.component
     FooterComponent,
     LanguageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
