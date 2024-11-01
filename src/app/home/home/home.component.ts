@@ -1,5 +1,4 @@
 import { Component, Input } from "@angular/core";
-import { LanguageService } from "src/app/services/language/language.service";
 import { homeMessages } from "src/app/utils/type/messages/home/message.type";
 
 @Component({
@@ -10,9 +9,7 @@ import { homeMessages } from "src/app/utils/type/messages/home/message.type";
 export class HomeComponent {
   @Input() textComponent!: homeMessages;
 
-  constructor(private readonly languageService: LanguageService) {
-    this.textComponent = this.languageService.returnHomeMessages();
-  }
+  constructor() {}
   downloadFile(): void {
     const url = "./assets/CV-WH.pdf";
     const nameFile = "CV - Wolfang Herrera.pdf";

@@ -1,6 +1,7 @@
 import { Component, ElementRef, EventEmitter } from "@angular/core";
 import { LanguageService } from "./services/language/language.service";
 import { homeMessages } from "./utils/type/messages/home/message.type";
+import { headerMessages } from "./utils/type/messages/shared/header/message.type";
 
 @Component({
   selector: "app-root",
@@ -9,6 +10,7 @@ import { homeMessages } from "./utils/type/messages/home/message.type";
 })
 export class AppComponent {
   textComponentHome!: homeMessages;
+  textComponentHeader!: headerMessages;
   constructor(
     private elementRef: ElementRef,
     private readonly languageService: LanguageService
@@ -16,6 +18,7 @@ export class AppComponent {
     this.flagChangeLanguage();
   }
   flagChangeLanguage() {
+    this.textComponentHeader = this.languageService.returnHeaderMessages();
     this.textComponentHome = this.languageService.returnHomeMessages();
   }
   scrollDownToComponent(component: string) {
