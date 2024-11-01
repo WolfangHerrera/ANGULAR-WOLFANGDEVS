@@ -10,6 +10,7 @@ import { ExperienceComponent } from "./home/experience/experience.component";
 import { PortfolioComponent } from './home/portfolio/portfolio.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { LanguageComponent } from './shared/language/language/language.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
+    LanguageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

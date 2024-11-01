@@ -2,10 +2,12 @@ import {
   Component,
   ElementRef,
   EventEmitter,
-  OnInit,
   Output,
   ViewChild,
 } from "@angular/core";
+
+import { componentType } from "src/app/utils/type/component.type";
+
 @Component({
   selector: "app-header",
   templateUrl: "./header.component.html",
@@ -16,9 +18,9 @@ export class HeaderComponent {
   @ViewChild("about") about!: ElementRef;
   @ViewChild("contact") contact!: ElementRef;
   @ViewChild("portfolio") portfolio!: ElementRef;
-  @Output() dataSent = new EventEmitter<string>();
+  @Output() componentSelected = new EventEmitter<componentType>();
 
-  scrollToComponent(component: string) {
-    this.dataSent.emit(component);
+  scrollToComponent(component: componentType) {
+    this.componentSelected.emit(component);
   }
 }

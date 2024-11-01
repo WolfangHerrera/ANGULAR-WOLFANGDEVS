@@ -1,5 +1,6 @@
-<app-header (dataSent)="receiveData($event)"></app-header>
-<app-body id="home"></app-body>
+<app-language (flagChangeLanguage)="flagChangeLanguage($event)"></app-language>
+<app-header (componentSelected)="scrollDownToComponent($event)"></app-header>
+<app-body [textComponent]="textComponentBody" id="home"></app-body>
 <app-about id="about"></app-about>
 <app-experience></app-experience>
 <app-portfolio id="portfolio"></app-portfolio>
