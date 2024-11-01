@@ -1,7 +1,7 @@
 <app-language (flagChangeLanguage)="flagChangeLanguage()"></app-language>
 <app-header [textComponent]="textComponentHeader" (componentSelected)="scrollDownToComponent($event)"></app-header>
 <app-home [textComponent]="textComponentHome" id="home"></app-home>
-<app-about id="about"></app-about>
+<app-about [textComponent]="textComponentAbout" id="about"></app-about>
 <app-experience></app-experience>
 <app-portfolio id="portfolio"></app-portfolio>
 <app-contact id="contact"></app-contact>

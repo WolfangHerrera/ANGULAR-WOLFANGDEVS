@@ -1,7 +1,7 @@
 <section class="container d-block justify-content-center py-5 my-5">
     <div class="row" style="width: auto;">
         <div class="col-12 pb-3 text-center">
-            <h2>ABOUT ME</h2>
+            <h2>{{textComponent.title}}</h2>
         </div>
         <div class="col p-3" style="background-color: #121212; border-radius: 25px; height: auto;">
             <!-- Mobile -->
@@ -34,44 +34,48 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">name</span><span style="color: #84b7d3;"> = </span><span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">Wolfang Herrera</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.name}}</span>'</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">age</span> <span style="color: #84b7d3;"> = </span><span
-                        style="color: #d69166;">22</span><br>
+                        style="color: #d69166;">{{textComponent.classPerson.age}}</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">gender</span> <span style="color: #84b7d3;"> = </span><span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">Male</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.gender}}</span>'</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">phone</span> <span style="color: #84b7d3;"> = </span> <span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">+57 (313)-450 8305</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.phone}}</span>'</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">languages</span> <span style="color: #84b7d3;"> = </span><span
                         style="color: #708bd0;">[
-                        <span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Spanish</span>', <span
+                        <span><span style="color: #9cdbfb;">'<span
+                                    style="color: #a8cd76;">{{textComponent.classPerson.language[0]}}</span>', <span
                                     style="color: #9cdbfb;">'<span
-                                        style="color: #a8cd76;">English</span>'</span></span></span>
+                                        style="color: #a8cd76;">{{textComponent.classPerson.language[1]}}</span>'</span></span></span>
                         ]</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">skills</span> <span style="color: #84b7d3;"> = </span><span
                         style="color: #708bd0;">[
-                        <span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Python</span>', <span
-                                    style="color: #9cdbfb;">'<span style="color: #a8cd76;">Typescript</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">AWS</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Docker</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Git</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">CleanCode</span>'
-                                </span></span></span>
+                        <span>
+                            <span *ngFor="let skill of textComponent.classPerson.skills; let i = index">
+                                <span style="color: #9cdbfb;">'<span
+                                        style="color: #a8cd76;">{{textComponent.classPerson.skills[i]}}</span>'</span>
+                                <span *ngIf="i < textComponent.classPerson.skills.length - 1">, </span>
+                            </span>
+                        </span>
                         ]</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">hobbies</span> <span style="color: #84b7d3;"> = </span> <span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">Taking a walk with my dog and
-                            Workout</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.hobbies}}</span>'</span><br>
                     <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">def</span> <span
                         style="color: #50aac6;"> __str__</span><span style="color: #708bd0;">(<span
@@ -133,44 +137,48 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">name</span><span style="color: #84b7d3;"> = </span><span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">Wolfang Herrera</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.name}}</span>'</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">age</span> <span style="color: #84b7d3;"> = </span><span
-                        style="color: #d69166;">22</span><br>
+                        style="color: #d69166;">{{textComponent.classPerson.age}}</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">gender</span> <span style="color: #84b7d3;"> = </span><span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">Male</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.gender}}</span>'</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">phone</span> <span style="color: #84b7d3;"> = </span> <span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">+57 (313)-450 8305</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.phone}}</span>'</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">languages</span> <span style="color: #84b7d3;"> = </span><span
                         style="color: #708bd0;">[
-                        <span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Spanish</span>', <span
+                        <span><span style="color: #9cdbfb;">'<span
+                                    style="color: #a8cd76;">{{textComponent.classPerson.language[0]}}</span>', <span
                                     style="color: #9cdbfb;">'<span
-                                        style="color: #a8cd76;">English</span>'</span></span></span>
+                                        style="color: #a8cd76;">{{textComponent.classPerson.language[1]}}</span>'</span></span></span>
                         ]</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">skills</span> <span style="color: #84b7d3;"> = </span><span
                         style="color: #708bd0;">[
-                        <span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Python</span>', <span
-                                    style="color: #9cdbfb;">'<span style="color: #a8cd76;">Typescript</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">AWS</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Docker</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Git</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">CleanCode</span>'
-                                </span></span></span>
+                        <span>
+                            <span *ngFor="let skill of textComponent.classPerson.skills; let i = index">
+                                <span style="color: #9cdbfb;">'<span
+                                        style="color: #a8cd76;">{{textComponent.classPerson.skills[i]}}</span>'</span>
+                                <span *ngIf="i < textComponent.classPerson.skills.length - 1">, </span>
+                            </span>
+                        </span>
                         ]</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">hobbies</span> <span style="color: #84b7d3;"> = </span> <span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">Taking a walk with my dog and
-                            Workout</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.hobbies}}</span>'</span><br>
                     <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">def</span> <span
                         style="color: #50aac6;"> __str__</span><span style="color: #708bd0;">(<span
@@ -231,44 +239,48 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">name</span><span style="color: #84b7d3;"> = </span><span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">Wolfang Herrera</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.name}}</span>'</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">age</span> <span style="color: #84b7d3;"> = </span><span
-                        style="color: #d69166;">22</span><br>
+                        style="color: #d69166;">{{textComponent.classPerson.age}}</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">gender</span> <span style="color: #84b7d3;"> = </span><span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">Male</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.gender}}</span>'</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">phone</span> <span style="color: #84b7d3;"> = </span> <span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">+57 (313)-450 8305</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.phone}}</span>'</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">languages</span> <span style="color: #84b7d3;"> = </span><span
                         style="color: #708bd0;">[
-                        <span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Spanish</span>', <span
+                        <span><span style="color: #9cdbfb;">'<span
+                                    style="color: #a8cd76;">{{textComponent.classPerson.language[0]}}</span>', <span
                                     style="color: #9cdbfb;">'<span
-                                        style="color: #a8cd76;">English</span>'</span></span></span>
+                                        style="color: #a8cd76;">{{textComponent.classPerson.language[1]}}</span>'</span></span></span>
                         ]</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">skills</span> <span style="color: #84b7d3;"> = </span><span
                         style="color: #708bd0;">[
-                        <span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Python</span>', <span
-                                    style="color: #9cdbfb;">'<span style="color: #a8cd76;">Typescript</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">AWS</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Docker</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">Git</span>',
-                                </span><span style="color: #9cdbfb;">'<span style="color: #a8cd76;">CleanCode</span>'
-                                </span></span></span>
+                        <span>
+                            <span *ngFor="let skill of textComponent.classPerson.skills; let i = index">
+                                <span style="color: #9cdbfb;">'<span
+                                        style="color: #a8cd76;">{{textComponent.classPerson.skills[i]}}</span>'</span>
+                                <span *ngIf="i < textComponent.classPerson.skills.length - 1">, </span>
+                            </span>
+                        </span>
                         ]</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
                         style="color: #aab1d3;">hobbies</span> <span style="color: #84b7d3;"> = </span> <span
-                        style="color: #9cdbfb;">'<span style="color: #a8cd76;">Taking a walk with my dog and
-                            Workout</span>'</span><br>
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.hobbies}}</span>'</span><br>
                     <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">def</span> <span
                         style="color: #50aac6;"> __str__</span><span style="color: #708bd0;">(<span
