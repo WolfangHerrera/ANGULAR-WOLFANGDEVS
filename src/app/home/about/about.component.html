@@ -3,8 +3,38 @@
         <div class="col-12 pb-3 text-center">
             <h2>{{textComponent.title}}</h2>
         </div>
-        <div class="col p-3" style="background-color: #121212; border-radius: 25px; height: auto;">
-            <!-- Mobile -->
+        <!-- Not Mobile -->
+        <div class="d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none col p-3"
+            style="background-color: #121212; border-radius: 25px; height: auto;">
+            <div class="d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none ">
+                <svg style="color: #ff5646;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    viewBox="0 0 24 24" fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-point">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+                </svg>
+                <svg style="color: #f4bf4f;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    viewBox="0 0 24 24" fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-point">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+                </svg>
+                <svg style="color: #61c554;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    viewBox="0 0 24 24" fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-point">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+                </svg>
+            </div>
+            <div class="d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none mx-2" style="width: auto;">
+                <p class="text-nowrap" style="font-family: 'Avenir Book', 'Sen', monospace;">
+                    <span style="color: #b69bf1;">>>></span> {{textComponent.returnError}}
+                </p>
+            </div>
+        </div>
+        <!-- Mobile -->
+        <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none col p-3"
+            style="background-color: #121212; border-radius: 25px; height: auto;">
             <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none">
                 <svg style="color: #ff5646;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                     viewBox="0 0 24 24" fill="currentColor"
@@ -99,7 +129,10 @@
                     <span style="color: #b69bf1;">>>></span> {{textComponent.returnClass}}
                 </p>
             </div>
-            <!-- Tablet -->
+        </div>
+        <!-- Tablet -->
+        <div class="d-none d-md-block d-sm-none d-lg-none d-xl-none col p-3"
+            style="background-color: #121212; border-radius: 25px; height: auto;">
             <div class="d-none d-md-block d-sm-none d-lg-none d-xl-none">
                 <svg style="color: #ff5646;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                     viewBox="0 0 24 24" fill="currentColor"
@@ -194,7 +227,10 @@
                     <span style="color: #b69bf1;">>>></span> {{textComponent.returnClass}}
                 </p>
             </div>
-            <!--  Desktop -->
+        </div>
+        <!-- Desktop -->
+        <div class="d-none d-lg-block d-sm-none d-md-none d-xl-none col p-3"
+            style="background-color: #121212; border-radius: 25px; height: auto;">
             <div class="d-none d-lg-block d-sm-none d-md-none d-xl-none">
                 <svg style="color: #ff5646;" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
                     viewBox="0 0 24 24" fill="currentColor"
@@ -289,7 +325,10 @@
                     <span style="color: #b69bf1;">>>></span> {{textComponent.returnClass}}
                 </p>
             </div>
-            <!--  TV -->
+        </div>
+        <!-- TV -->
+        <div class="d-none d-xl-block d-sm-none d-md-none d-lg-none col p-3"
+            style="background-color: #121212; border-radius: 25px; height: auto;">
             <div class="d-none d-xl-block d-sm-none d-md-none d-lg-none">
                 <svg style="color: #ff5646;" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
                     viewBox="0 0 24 24" fill="currentColor"
@@ -386,4 +425,5 @@
             </div>
         </div>
     </div>
+
 </section>

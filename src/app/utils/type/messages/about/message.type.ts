@@ -3,6 +3,7 @@ export type aboutMessages = {
   classPerson: classPerson;
   returnStrClass: string[];
   returnClass: string;
+  returnError: string;
 };
 
 type classPerson = {

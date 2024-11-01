@@ -35,6 +35,7 @@ export const ES_ABOUT_MESSAGES: aboutMessages = {
     "¡Hola! Soy Wolfang Herrera, tengo " +
     getWolfangAge() +
     " años y en mi tiempo libre disfruto de los videojuegos, explorar nuevas series y leer sobre habilidades blandas.",
+  returnError: "Error al visualizar la información",
 };
 
 export const EN_ABOUT_MESSAGES: aboutMessages = {
@@ -71,4 +72,5 @@ export const EN_ABOUT_MESSAGES: aboutMessages = {
     "Hello! I'm Wolfang Herrera, I'm " +
     getWolfangAge() +
     " years old and in my free time I enjoy of video games, exploring new series and reading about soft skills.",
+  returnError: "Error displaying information",
 };
