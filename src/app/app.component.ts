@@ -1,6 +1,6 @@
 import { Component, ElementRef, EventEmitter } from "@angular/core";
 import { LanguageService } from "./services/language/language.service";
-import { bodyMessages } from "./utils/type/messages/body/messages.type";
+import { homeMessages } from "./utils/type/messages/home/message.type";
 
 @Component({
   selector: "app-root",
@@ -8,15 +8,15 @@ import { bodyMessages } from "./utils/type/messages/body/messages.type";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  textComponentBody!: bodyMessages;
+  textComponentHome!: homeMessages;
   constructor(
     private elementRef: ElementRef,
     private readonly languageService: LanguageService
-  ) {}
-  flagChangeLanguage(event: boolean) {
-    if (event) {
-      this.textComponentBody = this.languageService.returnBodyMessages();
-    }
+  ) {
+    this.flagChangeLanguage();
+  }
+  flagChangeLanguage() {
+    this.textComponentHome = this.languageService.returnHomeMessages();
   }
   scrollDownToComponent(component: string) {
     const targetElement = this.elementRef.nativeElement.querySelector(

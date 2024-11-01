@@ -1,19 +1,18 @@
 import { Component, Input } from "@angular/core";
 import { LanguageService } from "src/app/services/language/language.service";
-import { bodyMessages } from "src/app/utils/type/messages/body/messages.type";
+import { homeMessages } from "src/app/utils/type/messages/home/message.type";
 
 @Component({
-  selector: "app-body",
-  templateUrl: "./body.component.html",
-  styleUrls: ["./body.component.scss"],
+  selector: "app-home",
+  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.scss"],
 })
-export class BodyComponent {
-  @Input() textComponent: bodyMessages;
+export class HomeComponent {
+  @Input() textComponent!: homeMessages;
 
   constructor(private readonly languageService: LanguageService) {
-    this.textComponent = this.languageService.returnBodyMessages();
+    this.textComponent = this.languageService.returnHomeMessages();
   }
-
   downloadFile(): void {
     const url = "./assets/CV-WH.pdf";
     const nameFile = "CV - Wolfang Herrera.pdf";
