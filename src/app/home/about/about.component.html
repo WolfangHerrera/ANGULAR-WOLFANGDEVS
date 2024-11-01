@@ -5,7 +5,7 @@
         </div>
         <div class="col p-3" style="background-color: #121212; border-radius: 25px; height: auto;">
             <!-- Mobile -->
-            <div class="d-xs-block d-md-none">
+            <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none">
                 <svg style="color: #ff5646;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                     viewBox="0 0 24 24" fill="currentColor"
                     class="icon icon-tabler icons-tabler-filled icon-tabler-point">
@@ -25,8 +25,8 @@
                     <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
                 </svg>
             </div>
-            <div class="d-xs-block d-md-none mx-2" style="width: auto;">
-                <p class="text-nowrap" style="font-family: 'Consolas', monospace; font-size: 6px;">
+            <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none mx-2" style="width: auto; font-size: 5px;">
+                <p class="text-nowrap" style="font-family: 'Avenir Book', 'Sen', monospace;">
                     <span style="color: #b499ee;">class</span><span style="color: #c2caf1;"> Person:</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">def</span> <span
                         style="color: #50aac6;"> __init__</span><span style="color: #708bd0;">(<span
@@ -81,21 +81,18 @@
                         style="color: #50aac6;"> __str__</span><span style="color: #708bd0;">(<span
                             style="color: #d8b172;">self</span>)</span><span style="color: #708bd0;"></span>:<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">return
-                        f</span><span style="color: #9cbe6f;">'<span>Hey, I'm
+                        f</span><span style="color: #9cbe6f;"><span
+                            style="color: #9cdbfb;">'</span><span>{{textComponent.returnStrClass[0]}}
                             <span style="color: #6a84c5;">{{'{'}}<span span style="color: #e77d8f;">self</span><span
                                     style="color: #9cdbfb;">.</span><span
-                                    style="color: #aab1d3;">name</span>{{'}'}}</span>,
-                            I'm <span><span style="color: #6a84c5;">{{'{'}}<span span
-                                        style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
-                                        style="color: #aab1d3;">age</span>{{'}'}}</span></span> years old and in my
-                            free
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time,
-                            I
-                            enjoy
+                                    style="color: #aab1d3;">name</span>{{'}'}}</span>{{textComponent.returnStrClass[1]}}<span><span
+                                    style="color: #6a84c5;">{{'{'}}<span span style="color: #e77d8f;">self</span><span
+                                        style="color: #9cdbfb;">.</span><span
+                                        style="color: #aab1d3;">age</span>{{'}'}}</span></span>{{textComponent.returnStrClass[2]}}
                             <span><span style="color: #6a84c5;">{{'{'}}<span span
                                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
-                                        style="color: #aab1d3;">hobbies</span>{{'}'}}</span></span>.</span>'</span><br>
+                                        style="color: #aab1d3;">hobbies</span>{{'}'}}</span></span>.</span><span
+                            style="color: #9cdbfb;">'</span></span><br>
                     <br>
                     <br>
                     <span style="color: #42859c;">print</span><span style="color: #708acf;">(Person())</span><br>
@@ -103,7 +100,7 @@
                 </p>
             </div>
             <!-- Tablet -->
-            <div class="d-none d-md-block d-lg-none">
+            <div class="d-none d-md-block d-sm-none d-lg-none d-xl-none">
                 <svg style="color: #ff5646;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                     viewBox="0 0 24 24" fill="currentColor"
                     class="icon icon-tabler icons-tabler-filled icon-tabler-point">
@@ -123,8 +120,8 @@
                     <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
                 </svg>
             </div>
-            <div class="d-none d-md-block d-lg-none mx-2" style="width: auto;">
-                <p class="text-nowrap" style="font-family: 'Consolas', monospace; font-size: 9px;">
+            <div class="d-none d-md-block d-sm-none d-lg-none d-xl-none mx-2" style="width: auto; font-size: 8px;">
+                <p class="text-nowrap" style="font-family: 'Avenir Book', 'Sen', monospace;">
                     <span style="color: #b499ee;">class</span><span style="color: #c2caf1;"> Person:</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">def</span> <span
                         style="color: #50aac6;"> __init__</span><span style="color: #708bd0;">(<span
@@ -179,33 +176,26 @@
                         style="color: #50aac6;"> __str__</span><span style="color: #708bd0;">(<span
                             style="color: #d8b172;">self</span>)</span><span style="color: #708bd0;"></span>:<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">return
-                        f</span><span style="color: #9cbe6f;">'<span>Hey, I'm
+                        f</span><span style="color: #9cbe6f;"><span
+                            style="color: #9cdbfb;">'</span><span>{{textComponent.returnStrClass[0]}}
                             <span style="color: #6a84c5;">{{'{'}}<span span style="color: #e77d8f;">self</span><span
                                     style="color: #9cdbfb;">.</span><span
-                                    style="color: #aab1d3;">name</span>{{'}'}}</span>,
-                            I'm <span><span style="color: #6a84c5;">{{'{'}}<span span
-                                        style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
-                                        style="color: #aab1d3;">age</span>{{'}'}}</span></span> years old and in my
-                            free
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time,
-                            I
-                            enjoy
+                                    style="color: #aab1d3;">name</span>{{'}'}}</span>{{textComponent.returnStrClass[1]}}<span><span
+                                    style="color: #6a84c5;">{{'{'}}<span span style="color: #e77d8f;">self</span><span
+                                        style="color: #9cdbfb;">.</span><span
+                                        style="color: #aab1d3;">age</span>{{'}'}}</span></span>{{textComponent.returnStrClass[2]}}
                             <span><span style="color: #6a84c5;">{{'{'}}<span span
                                         style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
-                                        style="color: #aab1d3;">hobbies</span>{{'}'}}</span></span>.</span>'</span><br>
+                                        style="color: #aab1d3;">hobbies</span>{{'}'}}</span></span>.</span><span
+                            style="color: #9cdbfb;">'</span></span><br>
                     <br>
                     <br>
                     <span style="color: #42859c;">print</span><span style="color: #708acf;">(Person())</span><br>
-                    <span style="color: #b69bf1;">>>></span> Hey, I'm Wolfang Herrera, I'm 22 years old and in my
-                    free
-                    time, I enjoy Taking
-                    a walk with my
-                    dog and Workout.
+                    <span style="color: #b69bf1;">>>></span> {{textComponent.returnClass}}
                 </p>
             </div>
             <!--  Desktop -->
-            <div class="d-none d-lg-block ">
+            <div class="d-none d-lg-block d-sm-none d-md-none d-xl-none">
                 <svg style="color: #ff5646;" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
                     viewBox="0 0 24 24" fill="currentColor"
                     class="icon icon-tabler icons-tabler-filled icon-tabler-point">
@@ -225,7 +215,102 @@
                     <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
                 </svg>
             </div>
-            <div class="d-none d-lg-block mx-5 " style="width: auto;">
+            <div class="d-none d-lg-block d-sm-none d-md-none d-xl-none mx-5 " style="width: auto; font-size: 13px;">
+                <p class="text-nowrap " style="font-family: 'Avenir Book', 'Sen', monospace;">
+                    <span style="color: #b499ee;">class</span><span style="color: #c2caf1;"> Person:</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">def</span> <span
+                        style="color: #50aac6;"> __init__</span><span style="color: #708bd0;">(<span
+                            style="color: #d8b172;">self</span>)</span><span style="color: #708bd0;"></span>:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
+                        style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
+                        style="color: #aab1d3;">name</span><span style="color: #84b7d3;"> = </span><span
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.name}}</span>'</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
+                        style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
+                        style="color: #aab1d3;">age</span> <span style="color: #84b7d3;"> = </span><span
+                        style="color: #d69166;">{{textComponent.classPerson.age}}</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
+                        style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
+                        style="color: #aab1d3;">gender</span> <span style="color: #84b7d3;"> = </span><span
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.gender}}</span>'</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
+                        style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
+                        style="color: #aab1d3;">phone</span> <span style="color: #84b7d3;"> = </span> <span
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.phone}}</span>'</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
+                        style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
+                        style="color: #aab1d3;">languages</span> <span style="color: #84b7d3;"> = </span><span
+                        style="color: #708bd0;">[
+                        <span><span style="color: #9cdbfb;">'<span
+                                    style="color: #a8cd76;">{{textComponent.classPerson.language[0]}}</span>', <span
+                                    style="color: #9cdbfb;">'<span
+                                        style="color: #a8cd76;">{{textComponent.classPerson.language[1]}}</span>'</span></span></span>
+                        ]</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
+                        style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
+                        style="color: #aab1d3;">skills</span> <span style="color: #84b7d3;"> = </span><span
+                        style="color: #708bd0;">[
+                        <span>
+                            <span *ngFor="let skill of textComponent.classPerson.skills; let i = index">
+                                <span style="color: #9cdbfb;">'<span
+                                        style="color: #a8cd76;">{{textComponent.classPerson.skills[i]}}</span>'</span>
+                                <span *ngIf="i < textComponent.classPerson.skills.length - 1">, </span>
+                            </span>
+                        </span>
+                        ]</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
+                        style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
+                        style="color: #aab1d3;">hobbies</span> <span style="color: #84b7d3;"> = </span> <span
+                        style="color: #9cdbfb;">'<span
+                            style="color: #a8cd76;">{{textComponent.classPerson.hobbies}}</span>'</span><br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">def</span> <span
+                        style="color: #50aac6;"> __str__</span><span style="color: #708bd0;">(<span
+                            style="color: #d8b172;">self</span>)</span><span style="color: #708bd0;"></span>:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">return
+                        f</span><span style="color: #9cbe6f;"><span
+                            style="color: #9cdbfb;">'</span><span>{{textComponent.returnStrClass[0]}}
+                            <span style="color: #6a84c5;">{{'{'}}<span span style="color: #e77d8f;">self</span><span
+                                    style="color: #9cdbfb;">.</span><span
+                                    style="color: #aab1d3;">name</span>{{'}'}}</span>{{textComponent.returnStrClass[1]}}<span><span
+                                    style="color: #6a84c5;">{{'{'}}<span span style="color: #e77d8f;">self</span><span
+                                        style="color: #9cdbfb;">.</span><span
+                                        style="color: #aab1d3;">age</span>{{'}'}}</span></span>{{textComponent.returnStrClass[2]}}
+                            <span><span style="color: #6a84c5;">{{'{'}}<span span
+                                        style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
+                                        style="color: #aab1d3;">hobbies</span>{{'}'}}</span></span>.</span><span
+                            style="color: #9cdbfb;">'</span></span><br>
+                    <br>
+                    <br>
+                    <span style="color: #42859c;">print</span><span style="color: #708acf;">(Person())</span><br>
+                    <span style="color: #b69bf1;">>>></span> {{textComponent.returnClass}}
+                </p>
+            </div>
+            <!--  TV -->
+            <div class="d-none d-xl-block d-sm-none d-md-none d-lg-none">
+                <svg style="color: #ff5646;" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                    viewBox="0 0 24 24" fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-point">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+                </svg>
+                <svg style="color: #f4bf4f;" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                    viewBox="0 0 24 24" fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-point">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+                </svg>
+                <svg style="color: #61c554;" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                    viewBox="0 0 24 24" fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-point">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+                </svg>
+            </div>
+            <div class="d-none d-xl-block d-sm-none d-md-none d-lg-none mx-5 " style="width: auto;">
                 <p class="text-nowrap " style="font-family: 'Avenir Book', 'Sen', monospace;">
                     <span style="color: #b499ee;">class</span><span style="color: #c2caf1;"> Person:</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">def</span> <span
@@ -301,5 +386,4 @@
             </div>
         </div>
     </div>
-
 </section>
