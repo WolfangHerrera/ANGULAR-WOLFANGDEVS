@@ -1,7 +1,7 @@
 export type aboutMessages = {
   title: string;
   classPerson: classPerson;
-  returnStrClass: string;
+  returnStrClass: string[];
   returnClass: string;
 };
 
