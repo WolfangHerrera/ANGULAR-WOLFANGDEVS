@@ -2,61 +2,30 @@
     <div class="row justify-content-center">
         <div class="col-12 pb-3 text-center">
             <h2>{{textComponent.title}}</h2>
-            <h3>{{textComponent.subtitle}}</h3>
         </div>
         <div class="col-10 col-md-8 col-xl-6">
             <ul class="timeline">
-                <li class="timeline-item">
+                <li class="timeline-item" *ngFor="let experience of textComponent.experience">
                     <span class="timeline-icon" style="background-color: #5c469c;">
-                        <i class="bi bi-code-slash text-white"></i>
+                        <i class="bi {{experience.icon}} text-white"></i>
                     </span>
                     <div class="timeline-body">
                         <div class="timeline-content">
                             <div class="card border-0">
                                 <div class="card-body p-0" style="background-color: #070F2B; color: #f0ece5;">
-                                    <h6 class="card-subtitle text-secondary mb-1">2022 - WORKING</h6>
-                                    <h4 class="card-title mb-3">PERIFERIA IT<h6>(FULL-STACK DEVELOPER)</h6>
-                                    </h4>
-                                    <p class="card-text m-0">Full-Stack Developer with experience in designing,
-                                        developing, and implementing complete web applications. Experienced in various
-                                        technologies, focused on solutions for the banking sector.</p>
-                                    <p></p>
-                                    <p class="card-text m-0">I developed and automated a process in
-                                        Python to handle .csv files received by email, making it easy to transform and
-                                        store them in DynamoDB.</p>
-                                    <p></p>
-                                    <p> I implemented a library to encrypt HTTP requests, to ensure the
-                                        confidentiality of sensitive information and avoid vulnerabilities.</p>
-                                    <p></p>
-                                    <p>All developments follow clean code principles and
-                                        include unit tests to ensure code efficiency and maintenance.</p>
+                                    <div>
+                                        <h6 class="card-subtitle text-secondary mb-1">{{experience.dateStart}} -
+                                            {{experience.dateEnd}} | {{experience.type}}</h6>
+                                        <h4 class="card-title mb-3">{{experience.title}}</h4>
+                                        <h6>({{experience.subtitle}})</h6>
+                                        <p *ngFor="let description of experience.description" class="card-text m-0">
+                                            {{description}} <br><br></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="timeline-item">
-                    <span class="timeline-icon" style="background-color: #5c469c;">
-                        <i class="bi bi-book text-white"></i>
-                    </span>
-                    <div class="timeline-body">
-                        <div class="timeline-content">
-                            <div class="card border-0">
-                                <div class="card-body p-0" style="background-color: #070F2B; color: #f0ece5;">
-                                    <h6 class="card-subtitle text-secondary mb-1">2023 - STUDYING</h6>
-                                    <h4 class="card-title mb-3">POLI GRANCOLOMBIANO<h6>(SOFTWARE
-                                            ENGINEER)</h6>
-                                    </h4>
-                                    <p class="card-text m-0">I'm learning about new development technologies such as
-                                        artificial intelligence, big data, operating systems, databases, networking,
-                                        programming, data mining, and UI/UX.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
             </ul>
         </div>
     </div>

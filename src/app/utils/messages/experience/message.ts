@@ -2,11 +2,11 @@ import { experienceMessages } from "../../type/messages/experience/message.type"
 
 export const ES_EXPERIENCE_MESSAGES: experienceMessages = {
   title: "EXPERIENCIA",
-  subtitle: "EXPERIENCIA LABORAL Y ACADÉMICA",
   experience: [
     {
       title: "PERIFERIA IT",
       type: "TRABAJANDO",
+      icon: "bi-code-slash",
       dateStart: "2022",
       subtitle: "DESARROLLADOR FULL-STACK",
       description: [
@@ -19,6 +19,7 @@ export const ES_EXPERIENCE_MESSAGES: experienceMessages = {
     {
       title: "POLI GRANCOLOMBIANO",
       type: "ESTUDIANDO",
+      icon: "bi-book",
       dateStart: "2023",
       subtitle: "INGENIERO DE SOFTWARE",
       description: [
@@ -30,11 +31,11 @@ export const ES_EXPERIENCE_MESSAGES: experienceMessages = {
 
 export const EN_EXPERIENCE_MESSAGES: experienceMessages = {
   title: "EXPERIENCE",
-  subtitle: "WORK AND ACADEMIC EXPERIENCE",
   experience: [
     {
       title: "PERIFERIA IT",
       type: "WORKING",
+      icon: "bi-code-slash",
       dateStart: "2022",
       subtitle: "FULL-STACK DEVELOPER",
       description: [
@@ -47,6 +48,7 @@ export const EN_EXPERIENCE_MESSAGES: experienceMessages = {
     {
       title: "POLI GRANCOLOMBIANO",
       type: "STUDYING",
+      icon: "bi-book",
       dateStart: "2023",
       subtitle: "SOFTWARE ENGINEER",
       description: [
