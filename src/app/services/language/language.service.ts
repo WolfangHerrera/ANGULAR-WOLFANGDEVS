@@ -14,6 +14,10 @@ import {
   EN_ABOUT_MESSAGES,
   ES_ABOUT_MESSAGES,
 } from "src/app/utils/messages/about/message";
+import {
+  EN_EXPERIENCE_MESSAGES,
+  ES_EXPERIENCE_MESSAGES,
+} from "src/app/utils/messages/experience/message";
 @Injectable({
   providedIn: "root",
 })
@@ -45,5 +49,11 @@ export class LanguageService {
     return this.currentLanguage === "EN"
       ? EN_ABOUT_MESSAGES
       : ES_ABOUT_MESSAGES;
+  }
+
+  returnExperienceMessages() {
+    return this.currentLanguage === "EN"
+      ? EN_EXPERIENCE_MESSAGES
+      : ES_EXPERIENCE_MESSAGES;
   }
 }
