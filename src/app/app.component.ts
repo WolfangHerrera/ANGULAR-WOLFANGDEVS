@@ -5,6 +5,7 @@ import { headerMessages } from "./utils/type/messages/shared/header/message.type
 import { aboutMessages } from "./utils/type/messages/about/message.type";
 import { experienceMessages } from "./utils/type/messages/experience/message.type";
 import { contactMessages } from "./utils/type/messages/contact/message.type";
+import { footerMessages } from "./utils/type/messages/shared/footer/message.type";
 
 @Component({
   selector: "app-root",
@@ -17,6 +18,7 @@ export class AppComponent {
   textComponentAbout!: aboutMessages;
   textComponentExperience!: experienceMessages;
   textComponentContact!: contactMessages;
+  textComponentFooter!: footerMessages;
   constructor(
     private elementRef: ElementRef,
     private readonly languageService: LanguageService
@@ -30,6 +32,7 @@ export class AppComponent {
     this.textComponentExperience =
       this.languageService.returnExperienceMessages();
     this.textComponentContact = this.languageService.returnContactMessages();
+    this.textComponentFooter = this.languageService.returnFooterMessages();
   }
   scrollDownToComponent(component: string) {
     const targetElement = this.elementRef.nativeElement.querySelector(

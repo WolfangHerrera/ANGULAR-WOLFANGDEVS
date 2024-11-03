@@ -22,6 +22,10 @@ import {
   EN_CONTACT_MESSAGES,
   ES_CONTACT_MESSAGES,
 } from "src/app/utils/messages/contact/message";
+import {
+  EN_FOOTER_MESSAGES,
+  ES_FOOTER_MESSAGES,
+} from "src/app/utils/messages/shared/footer/message";
 @Injectable({
   providedIn: "root",
 })
@@ -65,5 +69,11 @@ export class LanguageService {
     return this.currentLanguage === "EN"
       ? EN_CONTACT_MESSAGES
       : ES_CONTACT_MESSAGES;
+  }
+
+  returnFooterMessages() {
+    return this.currentLanguage === "EN"
+      ? EN_FOOTER_MESSAGES
+      : ES_FOOTER_MESSAGES;
   }
 }
