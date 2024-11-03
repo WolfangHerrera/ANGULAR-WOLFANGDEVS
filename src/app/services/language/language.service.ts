@@ -18,6 +18,10 @@ import {
   EN_EXPERIENCE_MESSAGES,
   ES_EXPERIENCE_MESSAGES,
 } from "src/app/utils/messages/experience/message";
+import {
+  EN_CONTACT_MESSAGES,
+  ES_CONTACT_MESSAGES,
+} from "src/app/utils/messages/contact/message";
 @Injectable({
   providedIn: "root",
 })
@@ -55,5 +59,11 @@ export class LanguageService {
     return this.currentLanguage === "EN"
       ? EN_EXPERIENCE_MESSAGES
       : ES_EXPERIENCE_MESSAGES;
+  }
+
+  returnContactMessages() {
+    return this.currentLanguage === "EN"
+      ? EN_CONTACT_MESSAGES
+      : ES_CONTACT_MESSAGES;
   }
 }

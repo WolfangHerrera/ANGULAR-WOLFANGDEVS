@@ -1,14 +1,16 @@
-export type contactMessages = {
+export type contactMessages = ContactForm & {
   title: string;
-  subtitle: string;
-  name: string;
-  email: string;
-  message: string;
   button: buttonContact[];
 };
 
 type buttonContact = {
   title: string;
   icon: string;
-  link: string;
 };
+
+export interface ContactForm {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}

@@ -1,59 +1,46 @@
 <section class="container my-5 py-5">
     <div class="row justify-content-center">
         <div class="col-12 pb-3 text-center">
-            <h2>CONTACT ME</h2>
+            <h2>{{textComponent.title}}</h2>
         </div>
         <div class="col-lg-9">
             <form (ngSubmit)="onSubmit($event)" #contactForm="ngForm">
                 <div class="row g-3">
                     <div class="col-12">
-                        <label for="your-name" class="form-label">YOUR NAME</label>
+                        <label for="your-name" class="form-label">{{textComponent.name}}</label>
                         <input type="text" class="form-control" id="your-name" name="name" [(ngModel)]="contact.name"
                             required>
                     </div>
                     <div class="col-12">
-                        <label for="your-email" class="form-label">YOUR EMAIL</label>
-                        <input type="text" class="form-control" id="your-email" name="email" [(ngModel)]="contact.name"
+                        <label for="your-email" class="form-label">{{textComponent.email}}</label>
+                        <input type="text" class="form-control" id="your-email" name="email" [(ngModel)]="contact.email"
                             required>
                     </div>
                     <div class="col-12">
-                        <label for="your-subject" class="form-label">YOUR SUBJECT</label>
+                        <label for="your-subject" class="form-label">{{textComponent.subject}}</label>
                         <input type="text" class="form-control" id="your-subject" name="subject"
                             [(ngModel)]="contact.subject">
                     </div>
                     <div class="col-12">
-                        <label for="your-message" class="form-label">YOUR MESSAGE</label>
+                        <label for="your-message" class="form-label">{{textComponent.message}}</label>
                         <textarea class="form-control" id="your-message" name="message" rows="5"
                             [(ngModel)]="contact.message" required></textarea>
                     </div>
 
                     <div class="col-sm-12 d-lg-none d-flex justify-content-center text-center">
-                        <div class="px-2">
-                            <button (click)="eventButtonWhatsapp()">type="submit" id="whatsapp"
-                                class="btn rounded-pill my-3 px-4"
-                                style="background-color: #5c469c; color: white;">
-                                <i class="bi bi-whatsapp"></i>
-                            </button>
-                        </div>
-                        <div class="px-2">
-                            <button (click)="eventButtonMail()" type="submit" id="email"
+                        <div *ngFor="let button of textComponent.button" class="px-2">
+                            <button (click)="eventButtonWhatsapp()" type="submit" id="whatsapp"
                                 class="btn rounded-pill my-3 px-4" style="background-color: #5c469c; color: white;">
-                                <i class="bi bi-envelope"></i>
+                                <i class="{{button.icon}}"></i>
                             </button>
                         </div>
                     </div>
 
                     <div class="col-md-12 col-lg-12 d-none d-lg-flex justify-content-center text-center">
-                        <div class="px-2">
+                        <div *ngFor="let button of textComponent.button" class="px-2">
                             <button (click)="eventButtonWhatsapp()" type="submit" id="whatsapp"
                                 class="btn rounded-pill my-3 px-4" style="background-color: #5c469c; color: white;">
-                                <i class="bi bi-whatsapp"></i> CONTACT ME VIA WHATSAPP
-                            </button>
-                        </div>
-                        <div class="px-2">
-                            <button (click)="eventButtonMail()" type="submit" id="email"
-                                class="btn rounded-pill my-3 px-4" style="background-color: #5c469c; color: white;">
-                                <i class="bi bi-envelope"></i> CONTACT ME VIA MAIL
+                                <i class="{{button.icon}}"></i> {{button.title}}
                             </button>
                         </div>
                     </div>

@@ -2,30 +2,36 @@ import { contactMessages } from "../../type/messages/contact/message.type";
 
 export const ES_CONTACT_MESSAGES: contactMessages = {
   title: "CONTACTO",
-  subtitle: "¡Hablemos!",
-  name: "Nombre",
-  email: "Correo Electrónico",
-  message: "Mensaje",
+  subject: "ASUNTO",
+  name: "TU NOMBRE",
+  email: "TU EMAIL",
+  message: "MENSAJE",
   button: [
     {
-      title: "ENVIAR",
-      icon: "bi-telegram",
-      link: "https://t.me/alejandro_arias",
+      title: "EMAIL",
+      icon: "bi bi-envelope",
+    },
+    {
+      title: "WHATSAPP",
+      icon: "bi bi-whatsapp",
     },
   ],
 };
 
 export const EN_CONTACT_MESSAGES: contactMessages = {
-  title: "CONTACT",
-  subtitle: "Let's talk!",
-  name: "Name",
-  email: "Email",
-  message: "Message",
+  title: "CONTACT ME",
+  subject: "SUBJECT",
+  name: "YOUR NAME",
+  email: "YOUR EMAIL",
+  message: "MESSAGE",
   button: [
     {
-      title: "SEND",
-      icon: "bi-telegram",
-      link: "https://t.me/alejandro_arias",
+      title: "EMAIL",
+      icon: "bi bi-envelope",
+    },
+    {
+      title: "WHATSAPP",
+      icon: "bi bi-whatsapp",
     },
   ],
 };
