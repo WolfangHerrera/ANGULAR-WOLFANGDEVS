@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
-import { ContactForm } from "./contact.model";
+import { Component, Input } from "@angular/core";
+import { ContactForm } from "src/app/utils/type/messages/contact/message.type";
+import { contactMessages } from "src/app/utils/type/messages/contact/message.type";
 
 @Component({
   selector: "app-contact",
@@ -7,10 +8,12 @@ import { ContactForm } from "./contact.model";
   styleUrls: ["./contact.component.scss"],
 })
 export class ContactComponent {
+  @Input() textComponent!: contactMessages;
   urlWhatsapp = "";
   urlMail = "";
   contact: ContactForm = {
     name: "",
+    email: "",
     subject: "",
     message: "",
   };
@@ -34,6 +37,7 @@ export class ContactComponent {
     if (!contact.name && !contact.subject) {
       contact = {
         name: "WolfangDevs",
+        email: "",
         subject: "Your services like as Freelancer",
         message: "Thanks.",
       };
@@ -49,6 +53,7 @@ export class ContactComponent {
     if (!contact.name && !contact.subject && !contact.message) {
       contact = {
         name: "WolfangDevs",
+        email: "",
         subject: "Your services like as Freelancer",
         message: "Thanks.",
       };
