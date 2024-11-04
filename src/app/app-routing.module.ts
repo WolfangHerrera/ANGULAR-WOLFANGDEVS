@@ -7,16 +7,16 @@ const routes: Routes = [
     path: "",
     component: CoreComponent,
   },
-  {
-    path: "RR",
-    children: [
-      {
-        path: "",
-        loadChildren: () =>
-          import("./mfe/rr/rr-routing.module").then((m) => m.RRRoutingModule),
-      },
-    ],
-  },
+  // {
+  //   path: "RR",
+  //   children: [
+  //     {
+  //       path: "",
+  //       loadChildren: () =>
+  //         import("./mfe/rr/rr-routing.module").then((m) => m.RRRoutingModule),
+  //     },
+  //   ],
+  // },
 ];
 
 @NgModule({

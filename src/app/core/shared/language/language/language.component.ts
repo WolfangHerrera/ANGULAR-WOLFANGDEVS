@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from "@angular/core";
-import { LanguageService } from "src/app/services/language/language.service";
+import { LanguageService } from "src/app/core/services/language/language.service";
 import { flagType } from "src/app/utils/type/flag.type";
 import { languageType } from "src/app/utils/type/language.type";
 

@@ -1,5 +1,5 @@
 import { Component, ElementRef } from "@angular/core";
-import { LanguageService } from "../services/language/language.service";
+import { LanguageService } from "./services/language/language.service";
 import { homeMessages } from "../utils/type/messages/home/message.type";
 import { headerMessages } from "../utils/type/messages/shared/header/message.type";
 import { aboutMessages } from "../utils/type/messages/about/message.type";
