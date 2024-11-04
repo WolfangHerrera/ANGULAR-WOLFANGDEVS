@@ -1,16 +1,19 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { CoreComponent } from "./core/core.component";
 
 const routes: Routes = [
+  {
+    path: "",
+    component: CoreComponent,
+  },
   {
     path: "RR",
     children: [
       {
         path: "",
         loadChildren: () =>
-          import("../app/core/mfe/rr/rr-routing.module").then(
-            (m) => m.RRRoutingModule
-          ),
+          import("./mfe/rr/rr-routing.module").then((m) => m.RRRoutingModule),
       },
     ],
   },

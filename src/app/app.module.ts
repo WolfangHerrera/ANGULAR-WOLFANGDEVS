@@ -11,7 +11,8 @@ import { ContactComponent } from "./core/contact/contact.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { LanguageComponent } from "./shared/language/language/language.component";
 import { FormsModule } from "@angular/forms";
-import { RRModule } from "./core/mfe/rr/rr.module";
+import { RRModule } from "./mfe/rr/rr.module";
+import { CoreComponent } from "./core/core.component";
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { RRModule } from "./core/mfe/rr/rr.module";
     ContactComponent,
     FooterComponent,
     LanguageComponent,
+    CoreComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, RRModule],
   providers: [],

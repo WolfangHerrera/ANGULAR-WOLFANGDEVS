@@ -20,8 +20,7 @@ export class PortfolioComponent {
         title: "ROOM RESERVATION",
         imgUrl: "./assets/ROOM-RESERVATION.jpg",
         desc: "The Room-Reservation Project is a full-stack web application designed to streamline the process of booking and managing room reservations. This project leverages Angular for the frontend, Flask for the backend, and PostgreSQL for the database.",
-        urlProject:
-          "https://github.com/WolfangHerrera/ANGULAR-ROOM-RESERVATION-APP",
+        urlProject: "/RR/reservation",
         urlGithub:
           "https://github.com/WolfangHerrera/ANGULAR-ROOM-RESERVATION-APP",
       },

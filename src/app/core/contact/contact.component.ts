@@ -44,7 +44,6 @@ export class ContactComponent {
     }
     const text = `Hey, I'm ${contact.name}, So I would like to know: ${contact.subject}. ${contact.message}`;
     const encodedText = encodeURIComponent(text);
-    console.log(text);
 
     return `https://wa.me/+573134508305?text=${encodedText}`;
   }
