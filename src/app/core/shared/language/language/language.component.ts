@@ -13,7 +13,7 @@ export class LanguageComponent implements OnInit {
   currentFlag!: flagType;
   @Output() flagChangeLanguage = new EventEmitter<true>();
 
-  constructor(private readonly languageService: LanguageService) {}
+  constructor(private languageService: LanguageService) {}
 
   ngOnInit(): void {
     this.currentLanguage = this.languageService.getLanguage();

@@ -32,7 +32,6 @@ export class CoreComponent implements OnInit {
     this.textComponentHeader = this.languageService.returnHeaderMessages();
     this.textComponentHome = this.languageService.returnHomeMessages();
     this.textComponentAbout = this.languageService.returnAboutMessages();
-
     this.textComponentExperience =
       this.languageService.returnExperienceMessages();
     this.textComponentContact = this.languageService.returnContactMessages();

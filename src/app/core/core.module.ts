@@ -9,9 +9,11 @@ import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { LanguageComponent } from "./shared/language/language/language.component";
 import { FormsModule } from "@angular/forms";
+import { CoreComponent } from "./core.component";
 
 @NgModule({
   declarations: [
+    CoreComponent,
     HomeComponent,
     HeaderComponent,
     AboutComponent,
@@ -22,15 +24,6 @@ import { FormsModule } from "@angular/forms";
     LanguageComponent,
   ],
   imports: [CommonModule, FormsModule],
-  exports: [
-    HomeComponent,
-    HeaderComponent,
-    AboutComponent,
-    ExperienceComponent,
-    PortfolioComponent,
-    ContactComponent,
-    FooterComponent,
-    LanguageComponent,
-  ],
+  exports: [CoreComponent],
 })
 export class CoreModule {}
