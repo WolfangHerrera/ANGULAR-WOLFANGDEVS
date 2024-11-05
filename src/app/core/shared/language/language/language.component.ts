@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Output } from "@angular/core";
-import { LanguageService } from "src/app/core/services/language/language.service";
+import { Component, EventEmitter, Output, OnInit } from "@angular/core";
+import { LanguageService } from "src/app/services/language/language.service";
 import { flagType } from "src/app/utils/type/flag.type";
 import { languageType } from "src/app/utils/type/language.type";
 
@@ -8,12 +8,14 @@ import { languageType } from "src/app/utils/type/language.type";
   templateUrl: "./language.component.html",
   styleUrls: ["./language.component.scss"],
 })
-export class LanguageComponent {
-  currentLanguage: languageType;
-  currentFlag: flagType;
+export class LanguageComponent implements OnInit {
+  currentLanguage!: languageType;
+  currentFlag!: flagType;
   @Output() flagChangeLanguage = new EventEmitter<true>();
 
-  constructor(private readonly languageService: LanguageService) {
+  constructor(private readonly languageService: LanguageService) {}
+
+  ngOnInit(): void {
     this.currentLanguage = this.languageService.getLanguage();
     this.currentFlag = this.getFlagFromAssets();
     this.flagChangeLanguage.emit(true);

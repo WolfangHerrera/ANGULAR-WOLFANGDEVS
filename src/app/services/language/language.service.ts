@@ -30,10 +30,7 @@ import {
   providedIn: "root",
 })
 export class LanguageService {
-  currentLanguage: languageType;
-  constructor() {
-    this.currentLanguage = "EN";
-  }
+  currentLanguage: languageType = "EN";
 
   setLanguage(language: languageType) {
     this.currentLanguage = language;
