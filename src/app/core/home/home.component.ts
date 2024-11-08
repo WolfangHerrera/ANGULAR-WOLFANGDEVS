@@ -10,6 +10,7 @@ export class HomeComponent {
   @Input() textComponent!: homeMessages;
 
   constructor() {}
+
   downloadFile(): void {
     const url = "./assets/CV-WH.pdf";
     const nameFile = "CV - Wolfang Herrera.pdf";
