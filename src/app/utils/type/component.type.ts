@@ -3,5 +3,5 @@ export type componentType =
   | "about"
   | "contact"
   | "portfolio"
-  | "home"
+  | "body"
   | "experience";

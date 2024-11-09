@@ -1,4 +1,4 @@
-export type homeMessages = {
+export type bodyMessages = {
   greeting: string;
   name: string;
   about: string;

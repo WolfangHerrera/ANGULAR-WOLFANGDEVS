@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import { aboutMessages } from "src/app/utils/type/messages/about/message.type";
+import { aboutMessages } from "../../../../utils/type/messages/about/message.type";
 
 @Component({
   selector: "app-about",
