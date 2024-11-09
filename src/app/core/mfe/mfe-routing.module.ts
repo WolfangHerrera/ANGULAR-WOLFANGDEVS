@@ -13,7 +13,7 @@ const routes: Routes = [
         loadChildren: () =>
           loadRemoteModule({
             type: "module",
-            remoteEntry: "https://main.d1wcfb0e5v1dhf.amplifyapp.com/remoteEntry.js",
+            remoteEntry: "http://mfe-room.s3-website-us-east-1.amazonaws.com/remoteEntry.js",
             exposedModule: "./AppModule",
           })
             .then((m) => m.AppModule)
