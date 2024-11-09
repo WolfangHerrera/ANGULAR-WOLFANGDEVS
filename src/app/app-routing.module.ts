@@ -9,6 +9,16 @@ const routes: Routes = [
         (m) => m.WolfangdevsModule
       ),
   },
+  // {
+  //   path: "RR",
+  //   children: [
+  //     {
+  //       path: "",
+  //       loadChildren: () =>
+  //         import("./mfe/rr/rr-routing.module").then((m) => m.RRRoutingModule),
+  //     },
+  //   ],
+  // },
   {
     path: "**",
     redirectTo: "",
