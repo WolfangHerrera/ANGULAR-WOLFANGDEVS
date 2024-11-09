@@ -1,13 +1,13 @@
 import { Component, Input } from "@angular/core";
-import { homeMessages } from "src/app/utils/type/messages/home/message.type";
+import { bodyMessages } from "../../../../utils/type/messages/body/message.type";
 
 @Component({
-  selector: "app-home",
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.scss"],
+  selector: "app-body",
+  templateUrl: "./body.component.html",
+  styleUrls: ["./body.component.scss"],
 })
-export class HomeComponent {
-  @Input() textComponent!: homeMessages;
+export class BodyComponent {
+  @Input() textComponent!: bodyMessages;
 
   constructor() {}
 
