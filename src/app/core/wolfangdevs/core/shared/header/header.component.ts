@@ -6,7 +6,6 @@ import {
   Output,
   ViewChild,
 } from "@angular/core";
-
 import { componentType } from "src/app/utils/type/component.type";
 import { headerMessages } from "src/app/utils/type/messages/shared/header/message.type";
 
@@ -16,7 +15,7 @@ import { headerMessages } from "src/app/utils/type/messages/shared/header/messag
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent {
-  @ViewChild("home") home!: ElementRef;
+  @ViewChild("body") body!: ElementRef;
   @ViewChild("about") about!: ElementRef;
   @ViewChild("contact") contact!: ElementRef;
   @ViewChild("portfolio") portfolio!: ElementRef;

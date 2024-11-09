@@ -1,5 +1,5 @@
 export type headerMessages = {
-  home: string;
+  body: string;
   about: string;
   portfolio: string;
   contact: string;

@@ -1,6 +1,8 @@
 import { Component, Input } from "@angular/core";
-import { ContactForm } from "src/app/utils/type/messages/contact/message.type";
-import { contactMessages } from "src/app/utils/type/messages/contact/message.type";
+import {
+  contactMessages,
+  ContactForm,
+} from "../../../../utils/type/messages/contact/message.type";
 
 @Component({
   selector: "app-contact",
