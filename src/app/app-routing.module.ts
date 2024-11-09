@@ -3,25 +3,25 @@ import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
   {
-    path: "",
+    path: "home",
     loadChildren: () =>
       import("./core/wolfangdevs/wolfangdevs.module").then(
         (m) => m.WolfangdevsModule
       ),
   },
-  // {
-  //   path: "RR",
-  //   children: [
-  //     {
-  //       path: "",
-  //       loadChildren: () =>
-  //         import("./mfe/rr/rr-routing.module").then((m) => m.RRRoutingModule),
-  //     },
-  //   ],
-  // },
+  {
+    path: "mfe",
+    children: [
+      {
+        path: "",
+        loadChildren: () =>
+          import("./core/mfe/mfe.module").then((m) => m.MfeModule),
+      },
+    ],
+  },
   {
     path: "**",
-    redirectTo: "",
+    redirectTo: "mfe",
   },
 ];
 
