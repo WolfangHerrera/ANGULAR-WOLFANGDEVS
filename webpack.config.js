@@ -31,21 +31,32 @@ module.exports = {
       shared: share({
         "@angular/core": {
           singleton: true,
-          strictVersion: true,
+          strictVersion: false,
+          requiredVersion: "auto",
         },
         "@angular/common": {
           singleton: true,
-          strictVersion: true,
+          strictVersion: false,
+          requiredVersion: "auto",
         },
         "@angular/common/http": {
           singleton: true,
-          strictVersion: true,
+          strictVersion: false,
+          requiredVersion: "auto",
         },
         "@angular/router": {
           singleton: true,
-          strictVersion: true,
+          strictVersion: false,
+          requiredVersion: "auto",
         },
-
+        "date-fns": {
+          singleton: true,
+          requiredVersion: "3.6.0",
+        },
+        sweetalert2: {
+          singleton: true,
+          requiredVersion: "11.10.7",
+        },
         ...sharedMappings.getDescriptors(),
       }),
     }),
