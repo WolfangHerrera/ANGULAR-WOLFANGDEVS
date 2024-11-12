@@ -1,4 +1,4 @@
-import { Component, ElementRef } from "@angular/core";
+import { Component, ElementRef, OnInit } from "@angular/core";
 import { LanguageService } from "src/app/services/language/language.service";
 import { aboutMessages } from "../../utils/type/messages/about/message.type";
 import { bodyMessages } from "../../utils/type/messages/body/message.type";
@@ -12,7 +12,8 @@ import { headerMessages } from "../../utils/type/messages/shared/header/message.
   templateUrl: "./wolfangdevs.component.html",
   styleUrls: ["./wolfangdevs.component.scss"],
 })
-export class WolfangdevsComponent {
+export class WolfangdevsComponent implements OnInit {
+  disableSpinner = false;
   textComponentHeader!: headerMessages;
   textComponentHome!: bodyMessages;
   textComponentAbout!: aboutMessages;
@@ -22,9 +23,15 @@ export class WolfangdevsComponent {
   constructor(
     private elementRef: ElementRef,
     private readonly languageService: LanguageService
-  ) {
+  ) {}
+
+  ngOnInit(): void {
     this.flagChangeLanguage();
+    setTimeout(() => {
+      this.disableSpinner = true;
+    }, 1500);
   }
+
   flagChangeLanguage() {
     this.textComponentHeader = this.languageService.returnHeaderMessages();
     this.textComponentHome = this.languageService.returnHomeMessages();
