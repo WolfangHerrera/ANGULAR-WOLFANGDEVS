@@ -13,7 +13,6 @@ import { headerMessages } from "../../utils/type/messages/shared/header/message.
   styleUrls: ["./wolfangdevs.component.scss"],
 })
 export class WolfangdevsComponent implements OnInit {
-  disableSpinner = false;
   textComponentHeader!: headerMessages;
   textComponentHome!: bodyMessages;
   textComponentAbout!: aboutMessages;
@@ -27,9 +26,6 @@ export class WolfangdevsComponent implements OnInit {
 
   ngOnInit(): void {
     this.flagChangeLanguage();
-    setTimeout(() => {
-      this.disableSpinner = true;
-    }, 1500);
   }
 
   flagChangeLanguage() {
@@ -41,6 +37,7 @@ export class WolfangdevsComponent implements OnInit {
     this.textComponentContact = this.languageService.returnContactMessages();
     this.textComponentFooter = this.languageService.returnFooterMessages();
   }
+
   scrollDownToComponent(component: string) {
     const targetElement = this.elementRef.nativeElement.querySelector(
       "#" + component

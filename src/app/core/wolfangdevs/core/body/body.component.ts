@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { bodyMessages } from "../../../../utils/type/messages/body/message.type";
 
 @Component({
@@ -6,10 +6,17 @@ import { bodyMessages } from "../../../../utils/type/messages/body/message.type"
   templateUrl: "./body.component.html",
   styleUrls: ["./body.component.scss"],
 })
-export class BodyComponent {
+export class BodyComponent implements OnInit {
+  disableSpinner = false;
   @Input() textComponent!: bodyMessages;
 
   constructor() {}
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.disableSpinner = true;
+    }, 1000);
+  }
 
   downloadFile(): void {
     const url = "./assets/CV-WH.pdf";
