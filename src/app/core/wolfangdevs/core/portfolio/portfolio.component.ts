@@ -25,18 +25,18 @@ export class PortfolioComponent {
           "https://github.com/WolfangHerrera/ANGULAR-ROOM-RESERVATION-APP",
       },
       {
+        title: "ALFA 3",
+        imgUrl: "./assets/ALFA3.jpg",
+        desc: "ALFA3 is an e-commerce project built on the MercadoShops platform. I was responsible for the complete design of the website",
+        urlProject: "https://alfa3electricos.com",
+        urlGithub: "https://alfa3electricos.com",
+      },
+      {
         title: "BANK API",
         imgUrl: "./assets/BANK-API.jpg",
         desc: "The Bank-API Project is a robust and scalable API designed for banking operations, built using Flask for the backend, PostgreSQL for the database, PyTest for testing, Docker for containerization, and Amazon ECS for deployment and orchestration.",
         urlProject: "https://github.com/WolfangHerrera/FAST-API-BANK-APP",
         urlGithub: "https://github.com/WolfangHerrera/FAST-API-BANK-APP",
-      },
-      {
-        title: "COMING SOON",
-        imgUrl: "./assets/PORTFOLIO-IMAGE.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, enim aliquam! Aliquid, necessitatibus dignissimos! Officia reprehenderit dolorum",
-        urlProject: "https://github.com/WolfangHerrera",
-        urlGithub: "https://github.com/WolfangHerrera",
       },
     ];
   }
