@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 import { PortfolioComponent } from "./portfolio/portfolio.component";
@@ -10,6 +10,7 @@ import { FormsModule } from "@angular/forms";
 import { FooterComponent } from "./shared/footer/footer.component";
 import { HeaderComponent } from "./shared/header/header.component";
 import { LanguageComponent } from "./shared/language/language.component";
+import { PdfViewerModule } from "ng2-pdf-viewer";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { LanguageComponent } from "./shared/language/language.component";
     FooterComponent,
     LanguageComponent,
   ],
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, PdfViewerModule],
   exports: [
     HeaderComponent,
     BodyComponent,
@@ -33,5 +34,6 @@ import { LanguageComponent } from "./shared/language/language.component";
     FooterComponent,
     LanguageComponent,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class CoreModule {}
