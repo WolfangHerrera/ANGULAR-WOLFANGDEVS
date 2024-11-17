@@ -1,4 +1,4 @@
-import { headerMessages } from "src/app/utils/type/messages/shared/header/message.type";
+import { headerMessages } from "../../../type/messages/shared/header/message.type";
 
 export const ES_HEADER_MESSAGES: headerMessages = {
   body: "INICIO",

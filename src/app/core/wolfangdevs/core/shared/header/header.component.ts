@@ -6,8 +6,8 @@ import {
   Output,
   ViewChild,
 } from "@angular/core";
-import { componentType } from "src/app/utils/type/component.type";
-import { headerMessages } from "src/app/utils/type/messages/shared/header/message.type";
+import { componentType } from "../../../utils/type/component.type";
+import { headerMessages } from "../../../utils/type/messages/shared/header/message.type";
 
 @Component({
   selector: "app-header",

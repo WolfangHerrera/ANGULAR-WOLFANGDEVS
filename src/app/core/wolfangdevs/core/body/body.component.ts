@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from "@angular/core";
-import { bodyMessages } from "../../../../utils/type/messages/body/message.type";
+
 import { Router } from "@angular/router";
+import { bodyMessages } from "../../utils/type/messages/body/message.type";
 
 @Component({
   selector: "app-body",

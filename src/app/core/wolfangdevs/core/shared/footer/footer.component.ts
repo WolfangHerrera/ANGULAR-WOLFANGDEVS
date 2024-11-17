@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import { footerMessages } from "../../../../../utils/type/messages/shared/footer/message.type";
+import { footerMessages } from "../../../utils/type/messages/shared/footer/message.type";
 
 @Component({
   selector: "app-footer",

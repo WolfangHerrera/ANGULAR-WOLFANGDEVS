@@ -1,4 +1,4 @@
-import { footerMessages } from "src/app/utils/type/messages/shared/footer/message.type";
+import { footerMessages } from "../../../type/messages/shared/footer/message.type";
 
 export const ES_FOOTER_MESSAGES: footerMessages = {
   title: "DESARROLLADO Y DISEÑADO POR WOLFANG HERRERA | © 2024",
