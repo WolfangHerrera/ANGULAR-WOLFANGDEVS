@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
   styleUrls: ["./pdf.component.scss"],
 })
 export class PdfComponent {
-  zoomPDF: number = 0.4;
+  zoomPDF: number = 0.5;
   disableSpinner = false;
   pdfUrl = "/assets/CV-HIGH.pdf";
 
@@ -21,6 +21,7 @@ export class PdfComponent {
   }
   zoomIn() {
     this.zoomPDF += 0.05;
+    console.log(this.zoomPDF);
   }
 
   zoomOut() {
