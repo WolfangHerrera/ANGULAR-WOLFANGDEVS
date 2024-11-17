@@ -21,6 +21,6 @@ export class BodyComponent implements OnInit {
   }
 
   redirectPDF() {
-    window.open("https://wolfangdevs-assets.s3.us-east-1.amazonaws.com/CV.pdf", "_blank");
+    window.open("shared/pdf", "_blank");
   }
 }
