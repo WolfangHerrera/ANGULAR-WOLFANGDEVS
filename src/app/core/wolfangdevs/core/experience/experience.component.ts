@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import { experienceMessages } from "../../../../utils/type/messages/experience/message.type";
+import { experienceMessages } from "../../utils/type/messages/experience/message.type";
 
 @Component({
   selector: "app-experience",

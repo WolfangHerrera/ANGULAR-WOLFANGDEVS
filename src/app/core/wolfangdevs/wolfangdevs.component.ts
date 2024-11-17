@@ -1,11 +1,11 @@
 import { Component, ElementRef, OnInit } from "@angular/core";
-import { LanguageService } from "src/app/services/language/language.service";
-import { aboutMessages } from "../../utils/type/messages/about/message.type";
-import { bodyMessages } from "../../utils/type/messages/body/message.type";
-import { contactMessages } from "../../utils/type/messages/contact/message.type";
-import { experienceMessages } from "../../utils/type/messages/experience/message.type";
-import { footerMessages } from "../../utils/type/messages/shared/footer/message.type";
-import { headerMessages } from "../../utils/type/messages/shared/header/message.type";
+import { LanguageService } from "src/app/core/wolfangdevs/services/language/language.service";
+import { aboutMessages } from "./utils/type/messages/about/message.type";
+import { bodyMessages } from "./utils/type/messages/body/message.type";
+import { contactMessages } from "./utils/type/messages/contact/message.type";
+import { experienceMessages } from "./utils/type/messages/experience/message.type";
+import { footerMessages } from "./utils/type/messages/shared/footer/message.type";
+import { headerMessages } from "./utils/type/messages/shared/header/message.type";
 
 @Component({
   selector: "app-wolfangdevs",
