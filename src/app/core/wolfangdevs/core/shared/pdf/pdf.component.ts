@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 export class PdfComponent {
   zoomPDF: number = 0.5;
   disableSpinner = false;
-  pdfUrl = "/assets/CV-HIGH.pdf";
+  pdfUrl = "https://wolfangdevs-assets.s3.us-east-1.amazonaws.com/CV-HIGH.pdf";
 
   constructor() {}
 
