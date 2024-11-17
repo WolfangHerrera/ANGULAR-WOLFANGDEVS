@@ -21,10 +21,26 @@ export class PdfComponent {
   }
   zoomIn() {
     this.zoomPDF += 0.05;
-    console.log(this.zoomPDF);
   }
 
   zoomOut() {
     this.zoomPDF -= 0.05;
+  }
+
+  downloadFile(): void {
+    const nameFile = "CV - Wolfang Herrera.pdf";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", this.pdfUrl, true);
+    xhr.responseType = "blob";
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        const blob = new Blob([xhr.response], { type: "application/pdf" });
+        const link = document.createElement("a");
+        link.href = window.URL.createObjectURL(blob);
+        link.download = nameFile;
+        link.click();
+      }
+    };
+    xhr.send();
   }
 }

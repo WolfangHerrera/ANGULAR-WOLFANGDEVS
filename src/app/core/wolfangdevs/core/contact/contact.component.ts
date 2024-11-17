@@ -2,7 +2,7 @@ import { Component, Input } from "@angular/core";
 import {
   contactMessages,
   ContactForm,
-} from "../../../../utils/type/messages/contact/message.type";
+} from "../../utils/type/messages/contact/message.type";
 
 @Component({
   selector: "app-contact",

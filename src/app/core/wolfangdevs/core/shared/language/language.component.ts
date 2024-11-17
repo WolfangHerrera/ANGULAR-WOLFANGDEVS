@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from "@angular/core";
-import { LanguageService } from "src/app/services/language/language.service";
-import { flagType } from "src/app/utils/type/flag.type";
-import { languageType } from "src/app/utils/type/language.type";
+import { LanguageService } from "src/app/core/wolfangdevs/services/language/language.service";
+import { flagType } from "../../../utils/type/flag.type";
+import { languageType } from "../../../utils/type/language.type";
 
 @Component({
   selector: "app-language",

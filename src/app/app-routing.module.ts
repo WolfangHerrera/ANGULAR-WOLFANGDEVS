@@ -10,16 +10,16 @@ const routes: Routes = [
         (m) => m.WolfangdevsModule
       ),
   },
-  {
-    path: "mfe",
-    children: [
-      {
-        path: "",
-        loadChildren: () =>
-          import("./core/mfe/mfe.module").then((m) => m.MfeModule),
-      },
-    ],
-  },
+  // {
+  //   path: "mfe",
+  //   children: [
+  //     {
+  //       path: "",
+  //       loadChildren: () =>
+  //         import("./core/mfe/mfe.module").then((m) => m.MfeModule),
+  //     },
+  //   ],
+  // },
   { path: "shared/pdf", component: PdfComponent },
   {
     path: "**",
