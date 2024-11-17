@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from "@angular/core";
 import { bodyMessages } from "../../../../utils/type/messages/body/message.type";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-body",
@@ -17,5 +18,9 @@ export class BodyComponent implements OnInit {
     setTimeout(() => {
       this.disableSpinner = true;
     }, 1000);
+  }
+
+  redirectPDF() {
+    window.open("shared/pdf", "_blank");
   }
 }

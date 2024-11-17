@@ -11,6 +11,7 @@ import { FooterComponent } from "./shared/footer/footer.component";
 import { HeaderComponent } from "./shared/header/header.component";
 import { LanguageComponent } from "./shared/language/language.component";
 import { PdfViewerModule } from "ng2-pdf-viewer";
+import { PdfComponent } from './shared/pdf/pdf.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PdfViewerModule } from "ng2-pdf-viewer";
     ContactComponent,
     FooterComponent,
     LanguageComponent,
+    PdfComponent,
   ],
   imports: [CommonModule, FormsModule, PdfViewerModule],
   exports: [
