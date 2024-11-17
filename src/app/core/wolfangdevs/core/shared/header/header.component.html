@@ -2,15 +2,15 @@
     <div class="container text-center">
         <div class="row d-flex align-items-center" style="height: 10vh;">
             <!-- Mobile -->
-            <div class="col-sm-12 text-center d-flex">
+            <div class="col-sm-12 text-center d-none d-sm-flex">
                 <img src="./assets/LOGO.png" alt="" width="80px">
             </div>
             <!-- Website -->
-            <div class="col-md-3 col-lg-3 align-items-center text-start d-flex ">
+            <div class="col-3 align-items-center text-start d-flex d-sm-none ">
                 <img src="./assets/LOGO.png" alt="" width="80px" class="px-1">
                 <h3>WOLFANG DEVS</h3>
             </div>
-            <div class="col-md-9 col-lg-9 d-flex justify-content-end">
+            <div class="col-9 justify-content-end d-flex d-sm-none">
                 <h5 (click)="scrollToComponent('body')" class="px-3" style="color: #5c469c;">{{textComponent.body}}</h5>
                 <h5 (click)="scrollToComponent('about')" class="px-3">{{textComponent.about}}</h5>
                 <h5 (click)="scrollToComponent('portfolio')" class="px-3">{{textComponent.portfolio}}</h5>
