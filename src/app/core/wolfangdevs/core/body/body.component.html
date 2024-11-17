@@ -9,7 +9,7 @@
 
 <div *ngIf="disableSpinner">
     <!-- MOBILE -->
-    <section class="container d-lg-none d-flex" style="height: 100%;">
+    <section class="container d-lg-none d-flex p-0 m-0" style="height: 100%;">
         <div class="row text-center my-5" style="width: auto;">
             <div class="col-12 mb-2">
                 <img src="./assets/PROFILE-PICTURE.jpg" style="border: 9px solid #5c469c; border-radius: 50%;"
@@ -53,13 +53,13 @@
                         </svg>
                     </a>
                 </div>
-                <button type="button" class="btn rounded-pill my-3 px-4"
+                <button type="button" (click)="redirectPDF()" class="btn rounded-pill my-3 px-4"
                     style="background-color: #5c469c; color: white;">{{textComponent.button}}</button>
             </div>
         </div>
     </section>
     <!-- WEB -->
-    <section class="container d-none d-lg-flex justify-content-center" style="height: 90vh;">
+    <section class="container d-none d-lg-flex justify-content-center p-0 m-0" style="height: 90vh;">
         <div class="row align-items-center m-5" style="width: 100%;">
             <div class="col-md-6 col-lg-6 text-start my-3">
                 <h3>{{textComponent.greeting}}</h3>
