@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from "@angular/core";
 import { bodyMessages } from "../../../../utils/type/messages/body/message.type";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-body",
@@ -8,6 +9,7 @@ import { bodyMessages } from "../../../../utils/type/messages/body/message.type"
 })
 export class BodyComponent implements OnInit {
   disableSpinner = false;
+  showPDF = false;
   @Input() textComponent!: bodyMessages;
 
   constructor() {}
@@ -18,21 +20,7 @@ export class BodyComponent implements OnInit {
     }, 1000);
   }
 
-  downloadFile(): void {
-    const url = "./assets/CV-WH.pdf";
-    const nameFile = "CV - Wolfang Herrera.pdf";
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", url, true);
-    xhr.responseType = "blob";
-    xhr.onload = function () {
-      if (xhr.status === 200) {
-        const blob = new Blob([xhr.response], { type: "application/pdf" });
-        const link = document.createElement("a");
-        link.href = window.URL.createObjectURL(blob);
-        link.download = nameFile;
-        link.click();
-      }
-    };
-    xhr.send();
+  redirectPDF() {
+    window.open("shared/pdf", "_blank");
   }
 }

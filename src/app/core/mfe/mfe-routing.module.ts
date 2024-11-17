@@ -13,13 +13,10 @@ const routes: Routes = [
         loadChildren: () =>
           loadRemoteModule({
             type: "module",
-            remoteEntry: "http://mfe-room.s3-website-us-east-1.amazonaws.com/remoteEntry.js",
+            remoteEntry:
+              "http://mfe-room.s3-website-us-east-1.amazonaws.com/remoteEntry.js",
             exposedModule: "./AppModule",
-          })
-            .then((m) => m.AppModule)
-            .catch((err) => {
-              console.error("Error loading remote module", err);
-            }),
+          }).then((m) => m.AppModule),
       },
     ],
   },
