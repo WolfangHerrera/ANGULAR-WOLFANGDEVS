@@ -9,13 +9,13 @@
 
 <div *ngIf="disableSpinner">
     <!-- MOBILE -->
-    <section class="container d-lg-none d-flex text-nowrap" style="height: 100%;">
+    <section class="container d-lg-none d-flex" style="width: 100vw;">
         <div class="row text-center my-5" style="width: auto;">
             <div class="col-12 mb-2">
                 <img src="./assets/PROFILE-PICTURE.jpg" style="border: 9px solid #5c469c; border-radius: 50%;"
                     alt="PROFILE PROFILE" width="280px">
             </div>
-            <div class="col-12 mt-2">
+            <div class="col-12 mt-2 text-nowrap">
                 <h3>{{textComponent.greeting}}</h3>
                 <h1>{{textComponent.name}}</h1>
                 <h4>{{textComponent.about}}</h4>
