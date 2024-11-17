@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
+import { PdfComponent } from "./core/wolfangdevs/core/shared/pdf/pdf.component";
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       },
     ],
   },
+  { path: "shared/pdf", component: PdfComponent },
   {
     path: "**",
     redirectTo: "",
