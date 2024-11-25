@@ -7,9 +7,9 @@
 </div>
 <div class="pdf-container vh-100" [ngStyle]="{ 'opacity': disableSpinner ? '100' : '0' }">
     <div class=" zoom-controls">
-        <button class="btn btn-dark" (click)="zoomIn()">ZOOM IN</button>
-        <button class="btn btn-dark" (click)="zoomOut()">ZOOM OUT</button>
-        <button class="btn btn-dark" (click)="downloadFile()">DOWNLOAD</button>
+        <button class="btn btn-dark rounded-3" (click)="zoomIn()">ZOOM IN</button>
+        <button class="btn btn-dark rounded-3" (click)="zoomOut()">ZOOM OUT</button>
+        <button class="btn btn-dark rounded-3" (click)="downloadFile()">DOWNLOAD</button>
     </div>
     <pdf-viewer [src]="pdfUrl" [render-text]="true" [original-size]="false" style="width: 100%; height: 100%;"
         [zoom]="zoomPDF" (after-load-complete)="onPdfLoadComplete($event)"></pdf-viewer>
