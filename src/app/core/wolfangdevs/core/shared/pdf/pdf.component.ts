@@ -8,15 +8,14 @@ import { Component, OnInit } from "@angular/core";
 export class PdfComponent implements OnInit {
   zoomPDF: number = 0.5;
   disableSpinner = false;
-  pdfUrl = "https://wolfangdevs-assets.s3.us-east-1.amazonaws.com/CV.pdf";
-
+  pdfUrl = "https://wolfangdevs-assets.s3.us-east-1.amazonaws.com/Curriculum+-+Wolfang+Herrera.pdf";
+  
   constructor() {}
 
   ngOnInit() {
     setTimeout(async () => {
       if (!this.disableSpinner) {
-        await this.downloadFile();
-        window.close();
+        await this.downloadFile(true);
       }
     }, 5000);
   }
@@ -36,7 +35,7 @@ export class PdfComponent implements OnInit {
     this.zoomPDF -= 0.05;
   }
 
-  async downloadFile(): Promise<void> {
+  async downloadFile( notLoaded?: boolean ): Promise<void> {
     const nameFile = "CV - Wolfang Herrera.pdf";
     const xhr = new XMLHttpRequest();
     xhr.open("GET", this.pdfUrl, true);
@@ -51,5 +50,8 @@ export class PdfComponent implements OnInit {
       }
     };
     xhr.send();
+    if (notLoaded) {
+      window.close();
+    }
   }
 }
