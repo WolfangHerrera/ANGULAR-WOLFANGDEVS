@@ -1,16 +1,25 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-pdf",
   templateUrl: "./pdf.component.html",
   styleUrls: ["./pdf.component.scss"],
 })
-export class PdfComponent {
+export class PdfComponent implements OnInit {
   zoomPDF: number = 0.5;
   disableSpinner = false;
   pdfUrl = "https://wolfangdevs-assets.s3.us-east-1.amazonaws.com/CV.pdf";
 
   constructor() {}
+
+  ngOnInit() {
+    setTimeout(async () => {
+      if (!this.disableSpinner) {
+        await this.downloadFile();
+        window.close();
+      }
+    }, 5000);
+  }
 
   onPdfLoadComplete(event: any) {
     if (event) {
@@ -27,7 +36,7 @@ export class PdfComponent {
     this.zoomPDF -= 0.05;
   }
 
-  downloadFile(): void {
+  async downloadFile(): Promise<void> {
     const nameFile = "CV - Wolfang Herrera.pdf";
     const xhr = new XMLHttpRequest();
     xhr.open("GET", this.pdfUrl, true);
