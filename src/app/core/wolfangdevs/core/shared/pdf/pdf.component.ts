@@ -8,7 +8,7 @@ import { Component, OnInit } from "@angular/core";
 export class PdfComponent implements OnInit {
   zoomPDF: number = 0.5;
   disableSpinner = false;
-  pdfUrl = "https://wolfangdevs-assets.s3.us-east-1.amazonaws.com/Curriculum+-+Wolfang+Herrera.pdf";
+  pdfUrl = "https://wolfangdevs-assets.s3.us-east-1.amazonaws.com/CV.pdf";
   
   constructor() {}
 
