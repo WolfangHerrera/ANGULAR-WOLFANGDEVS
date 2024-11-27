@@ -13,11 +13,6 @@ export class PdfComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    setTimeout(async () => {
-      if (!this.disableSpinner) {
-        await this.downloadFile(true);
-      }
-    }, 5000);
   }
 
   onPdfLoadComplete(event: any) {
@@ -35,7 +30,7 @@ export class PdfComponent implements OnInit {
     this.zoomPDF -= 0.05;
   }
 
-  async downloadFile( notLoaded?: boolean ): Promise<void> {
+  async downloadFile(): Promise<void> {
     const nameFile = "CV - Wolfang Herrera.pdf";
     const xhr = new XMLHttpRequest();
     xhr.open("GET", this.pdfUrl, true);
@@ -50,8 +45,5 @@ export class PdfComponent implements OnInit {
       }
     };
     xhr.send();
-    if (notLoaded) {
-      window.close();
-    }
   }
 }
