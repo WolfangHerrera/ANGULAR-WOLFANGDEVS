@@ -9,10 +9,31 @@ export class PdfComponent implements OnInit {
   zoomPDF: number = 0.5;
   disableSpinner = false;
   pdfUrl = "https://wolfangdevs-assets.s3.us-east-1.amazonaws.com/CV.pdf";
-  
+
   constructor() {}
 
   ngOnInit() {
+    this.getPDF()
+  }
+
+  async getPDF() {
+    const url = "https://wolfangdevs-assets.s3.us-east-1.amazonaws.com/CV.pdf"; // URL del PDF
+
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/pdf",
+      },
+      mode: "cors",
+    });
+
+    if (!response.ok) {
+      throw new Error(`No se pudo obtener el PDF: ${response.statusText}`);
+    }
+
+    const blob = await response.blob();
+
+    this.pdfUrl = URL.createObjectURL(blob);
   }
 
   onPdfLoadComplete(event: any) {
