@@ -21,7 +21,7 @@ export class PdfComponent implements OnInit {
   setZoomLevel() {
     const screenWidth = window.innerWidth;
     if (screenWidth < 768) {
-      this.zoomPDF = 1;
+      this.zoomPDF = 1.15;
     }
   }
 
