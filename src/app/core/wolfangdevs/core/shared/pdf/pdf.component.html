@@ -1,16 +1,34 @@
-<div *ngIf="!disableSpinner" class="m-0 vh-100 row justify-content-evenly align-items-center">
-    <div class=" text-center">
-        <div class="spinner-border text-light" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
+<div
+  *ngIf="!disableSpinner"
+  class="m-0 vh-100 row justify-content-evenly align-items-center"
+>
+  <div class="text-center">
+    <div class="spinner-border text-light" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
+  </div>
 </div>
-<div class="pdf-container vh-100" [ngStyle]="{ 'opacity': disableSpinner ? '100' : '0' }">
-    <div class=" zoom-controls">
-        <button class="btn btn-dark rounded-3" (click)="zoomIn()">ZOOM IN</button>
-        <button class="btn btn-dark rounded-3" (click)="zoomOut()">ZOOM OUT</button>
-        <button class="btn btn-dark rounded-3" (click)="downloadFile()">DOWNLOAD</button>
-    </div>
-    <pdf-viewer [src]="pdfUrl" [render-text]="true" [original-size]="false" style="width: 100%; height: 100%;"
-        [zoom]="zoomPDF" (after-load-complete)="onPdfLoadComplete($event)"></pdf-viewer>
+<div
+  class="pdf-container vh-100"
+  [ngStyle]="{ opacity: disableSpinner ? '100' : '0' }"
+>
+  <div class="zoom-controls">
+    <button class="btn btn-dark rounded-3" (click)="zoomIn()">
+      <img src="assets/plus.svg" alt="Zoom In" width="20px" />
+    </button>
+    <button class="btn btn-dark rounded-3" (click)="zoomOut()">
+      <img src="assets/minus.svg" alt="Zoom In" width="20px" />
+    </button>
+    <button class="btn btn-dark rounded-3" (click)="downloadFile()">
+      <img src="assets/plus.svg" alt="Zoom In" width="20px" />
+    </button>
+  </div>
+  <pdf-viewer
+    [src]="pdfUrl"
+    [render-text]="true"
+    [original-size]="false"
+    style="width: 100vw; height: 100vh"
+    [zoom]="zoomPDF"
+    (after-load-complete)="onPdfLoadComplete($event)"
+  ></pdf-viewer>
 </div>

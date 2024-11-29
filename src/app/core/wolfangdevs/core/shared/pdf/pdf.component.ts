@@ -10,16 +10,24 @@ export class PdfComponent implements OnInit {
   disableSpinner = false;
   pdfUrl = "https://wolfangdevs-assets.s3.us-east-1.amazonaws.com/CV.pdf";
 
-  constructor() {}
+  constructor() {
+    this.setZoomLevel();
+  }
 
   ngOnInit() {
     this.getPDF()
   }
 
-  async getPDF() {
-    const url = "https://wolfangdevs-assets.s3.us-east-1.amazonaws.com/CV.pdf"; // URL del PDF
+  setZoomLevel() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth < 768) {
+      this.zoomPDF = 1;
+    }
+  }
 
-    const response = await fetch(url, {
+  async getPDF() {
+
+    const response = await fetch(this.pdfUrl, {
       method: "GET",
       headers: {
         "Content-Type": "application/pdf",
