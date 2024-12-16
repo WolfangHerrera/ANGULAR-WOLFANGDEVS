@@ -32,11 +32,11 @@ export class PortfolioComponent {
         urlGithub: "https://alfa3electricos.com",
       },
       {
-        title: "BANK API",
+        title: "NTTDATA CLIENT",
         imgUrl: "./assets/BANK-API.jpg",
-        desc: "The Bank-API Project is a robust and scalable API designed for banking operations, built using Flask for the backend, PostgreSQL for the database, PyTest for testing, Docker for containerization, and Amazon ECS for deployment and orchestration.",
-        urlProject: "https://github.com/WolfangHerrera/FAST-API-BANK-APP",
-        urlGithub: "https://github.com/WolfangHerrera/FAST-API-BANK-APP",
+        desc: "NTTDATA CLIENT is a full-stack web application designed to streamline the process of managing bank accounts. This project leverages Angular for the frontend, Java for the backend, and PostgreSQL for the database.",
+        urlProject: "https://app-nttdata.wolfangdevs.com",
+        urlGithub: "https://github.com/WolfangHerrera/ANGULAR-NTTDATA-CLIENT",
       },
     ];
   }
