@@ -3,7 +3,7 @@
   "short_name": "andreydevs",
   "theme_color": "#070F2B",
   "background_color": "#070F2B",
-  "display": "standalone",
+  "display": "full-screen",
   "scope": "./",
   "start_url": "./",
   "icons": [
