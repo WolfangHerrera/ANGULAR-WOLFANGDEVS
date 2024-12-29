@@ -1,8 +1,8 @@
 {
   "name": "andreydevs",
   "short_name": "andreydevs",
-  "theme_color": "#070F2B",
-  "background_color": "#070F2B",
+  "theme_color": "#1976d2",
+  "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
