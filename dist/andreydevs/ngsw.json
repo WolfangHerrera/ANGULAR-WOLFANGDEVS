@@ -1,0 +1,107 @@
+{
+  "configVersion": 1,
+  "timestamp": 1736469505330,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/189.48980f31b869854e.js",
+        "/index.html",
+        "/main.a5155ea8d65bb93d.js",
+        "/manifest.webmanifest",
+        "/polyfills.00bf520b14e03e77.js",
+        "/runtime.c0a3730a8026ebac.js",
+        "/styles.b195d0f579eefa59.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/ALFA3.jpg",
+        "/assets/BANK-API.jpg",
+        "/assets/CV-HIGH.pdf",
+        "/assets/CV.pdf",
+        "/assets/LOGO.png",
+        "/assets/PORTFOLIO-IMAGE.png",
+        "/assets/PROFILE-PICTURE.jpg",
+        "/assets/ROOM-RESERVATION.jpg",
+        "/assets/download.svg",
+        "/assets/flags/co.svg",
+        "/assets/flags/us.svg",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/minus.svg",
+        "/assets/plus.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/189.48980f31b869854e.js": "2c2523a648ede4de70ddb0a0c7c190d3d3f63881",
+    "/assets/ALFA3.jpg": "ea86d496468fa9829cc0a7a69335fa298c51e939",
+    "/assets/BANK-API.jpg": "f75aa994501478cb4ea459b3bf2f520dd1fb4ac3",
+    "/assets/CV-HIGH.pdf": "89012cf96f836cf6073834a4d08419d7ed3a4ebb",
+    "/assets/CV.pdf": "f02b476cc047d87ba942e3578d602973114055e5",
+    "/assets/LOGO.png": "a67b3ad63527e992a48db4164afe3d699c7ba044",
+    "/assets/PORTFOLIO-IMAGE.png": "bc4f7d1c190debda5fd8e413c52b5434246aa8c2",
+    "/assets/PROFILE-PICTURE.jpg": "f909ae51cd5590c3f4f814b6021ed235b744616f",
+    "/assets/ROOM-RESERVATION.jpg": "a4c8f014e06b267f05a8486a2816b921767318e5",
+    "/assets/download.svg": "bd2a55b7b46416c81547a72e2f3f76551ce49cc5",
+    "/assets/flags/co.svg": "4752b21e87ed006024c0caa870207d86b3459735",
+    "/assets/flags/us.svg": "37ab729313d47d14f637326a1432ee02e62db544",
+    "/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/assets/minus.svg": "6402f786259a723548ea3ed08a77e35280f646a9",
+    "/assets/plus.svg": "81e0c472eb2f49de12b3b77fee5d5d019fe6cee5",
+    "/index.html": "d5766086d377e2fc6a711a83fe855afcd77d4991",
+    "/main.a5155ea8d65bb93d.js": "d9c18ea2773fd9770d68bab4b897c59205fd4c97",
+    "/manifest.webmanifest": "533c68a2ef7eaccd133cb5dea7f666a857715137",
+    "/polyfills.00bf520b14e03e77.js": "a7bd7bd40248a744593904126133b1b60d29afae",
+    "/runtime.c0a3730a8026ebac.js": "dc4948efd45ea24efb5b4e27bbce588a96c4c1a7",
+    "/styles.b195d0f579eefa59.css": "0d99f18ff8428ecce918fa38b5e6856c037142aa"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
