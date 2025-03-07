@@ -17,17 +17,9 @@ export class PortfolioComponent {
   constructor() {
     this.arrayDataPortfolio = [
       {
-        title: "ROOM RESERVATION",
-        imgUrl: "./assets/ROOM-RESERVATION.jpg",
-        desc: "The Room-Reservation Project is a full-stack web application designed to streamline the process of booking and managing room reservations. This project leverages Angular for the frontend, Flask for the backend, and PostgreSQL for the database.",
-        urlProject: "https://app-room.wolfangdevs.com",
-        urlGithub:
-          "https://github.com/WolfangHerrera/ANGULAR-ROOM-RESERVATION-APP",
-      },
-      {
-        title: "ALFA 3",
+        title: "ALFA 3 ELÉCTRICOS",
         imgUrl: "./assets/ALFA3.jpg",
-        desc: "ALFA3 is an e-commerce project built on the MercadoShops platform. I was responsible for the complete design of the website",
+        desc: "ALFA3 is an e-commerce project developed with IONIC and Angular. I was responsible for the complete design of the website, which now includes a payment gateway integrated with MercadoPago and notifications via WhatsApp using the Meta API.",
         urlProject: "https://alfa3electricos.com",
         urlGithub: "https://alfa3electricos.com",
       },
@@ -38,6 +30,14 @@ export class PortfolioComponent {
         urlProject: "https://app-nttdata.wolfangdevs.com",
         urlGithub: "https://github.com/WolfangHerrera/ANGULAR-NTTDATA-CLIENT",
       },
+      {
+        title: "ROOM RESERVATION",
+        imgUrl: "./assets/ROOM-RESERVATION.jpg",
+        desc: "The Room-Reservation Project is a full-stack web application designed to streamline the process of booking and managing room reservations. This project leverages Angular for the frontend, Flask for the backend, and PostgreSQL for the database.",
+        urlProject: "https://app-room.wolfangdevs.com",
+        urlGithub:
+          "https://github.com/WolfangHerrera/ANGULAR-ROOM-RESERVATION-APP",
+      }
     ];
   }
 }

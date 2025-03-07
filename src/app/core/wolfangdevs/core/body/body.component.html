@@ -7,7 +7,7 @@
 </div>
 
 
-<div *ngIf="disableSpinner" class="d-flex justify-content-center">
+<div *ngIf="disableSpinner" [ngClass]="{'fade-in': disableSpinner}" class="d-flex justify-content-center">
     <!-- MOBILE -->
     <section class="container text-center d-lg-none justify-content-center d-flex m-0 p-0">
         <div class="row text-center my-5">
