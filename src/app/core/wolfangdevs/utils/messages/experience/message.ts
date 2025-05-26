@@ -84,7 +84,7 @@ export const EN_EXPERIENCE_MESSAGES: experienceMessages = {
       subtitle: "FULL-STACK DEVELOPER",
       description: [
         "Full-Stack Developer with experience in designing, developing, and implementing complete web applications. Experienced in various technologies, focused on solutions for the banking sector.",
-        "I developed and automated a process in Python to handle .csv files received by email, making it easy to transform and store them in DynamoDB.",
+        "I developed and automated a process in Java to handle .csv files received by email, making it easy to transform and store them in PostgreSQL.",
         "I implemented a library to encrypt HTTP requests, to ensure the confidentiality of sensitive information and avoid vulnerabilities.",
         "All developments follow clean code principles and include unit tests to ensure code efficiency and maintenance.",
       ],
