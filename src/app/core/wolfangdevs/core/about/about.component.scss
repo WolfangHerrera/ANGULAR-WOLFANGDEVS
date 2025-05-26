@@ -1,0 +1,9 @@
+.pre-about{
+    font-family: 'Avenir Book', 'Sen', monospace;
+    color: white;
+    white-space: pre-wrap;
+    font-size: 0.45rem;
+    @media (min-width: 768px) {
+        font-size: 0.8rem;
+    }
+}
