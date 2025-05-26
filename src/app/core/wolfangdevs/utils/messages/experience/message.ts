@@ -4,6 +4,28 @@ export const ES_EXPERIENCE_MESSAGES: experienceMessages = {
   title: "EXPERIENCIA",
   experience: [
     {
+      title: "EF SET: ENGLISH PROFICIENCY TEST",
+      type: "CERTIFICACIÓN",
+      icon: "bi-award",
+      dateStart: "2025",
+      dateEnd: "2025",
+      subtitle: "CERTIFICADO",
+      description: [
+        "Certificación de EF SET, que valida mis habilidades en el idioma inglés con un puntaje de 62/100, equivalente a un nivel B2.",
+      ]
+    },
+    {
+      title: "AWS CLOUD PRACTITIONER",
+      type: "CERTIFICACIÓN",
+      icon: "bi-award",
+      dateStart: "2025",
+      dateEnd: "2025",
+      subtitle: "CERTIFICADO",
+      description: [
+        "Certificación de AWS Cloud Practitioner, que valida mis conocimientos fundamentales sobre los servicios de AWS, su arquitectura y las mejores prácticas de seguridad.",
+      ]
+    },
+    {
       title: "PERIFERIA IT",
       type: "TRABAJANDO",
       icon: "bi-code-slash",
@@ -32,6 +54,28 @@ export const ES_EXPERIENCE_MESSAGES: experienceMessages = {
 export const EN_EXPERIENCE_MESSAGES: experienceMessages = {
   title: "EXPERIENCE",
   experience: [
+    {
+      title: "EF SET: ENGLISH PROFICIENCY TEST",
+      type: "CERTIFICATION",
+      icon: "bi-award",
+      dateStart: "2025",
+      dateEnd: "2025",
+      subtitle: "CERTIFICATE",
+      description: [
+        "EF SET certification, validating my English skills with a score of 62/100, equivalent to a B2 level.",
+      ]
+    },
+    {
+      title: "AWS CLOUD PRACTITIONER",
+      type: "CERTIFICATION",
+      icon: "bi-award",
+      dateStart: "2025",
+      dateEnd: "2025",
+      subtitle: "CERTIFICATE",
+      description: [
+        "AWS Cloud Practitioner certification, validating my fundamental knowledge of AWS services, architecture, and best security practices.",
+      ]
+    },
     {
       title: "PERIFERIA IT",
       type: "WORKING",
