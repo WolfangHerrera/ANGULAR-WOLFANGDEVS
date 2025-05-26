@@ -1,57 +1,61 @@
 <section class="container d-block justify-content-center py-5 my-5">
-  <div class="row" style="width: auto;">
+  <div class="row" style="width: auto">
     <div class="col-12 pb-3 text-center">
-      <h2>{{textComponent.title}}</h2>
+      <h2>{{ textComponent.title }}</h2>
     </div>
     <!-- Mobile -->
-    <div class="col p-3" style="background-color: #121212; border-radius: 25px; height: auto;">
+    <div class="col p-3" style="background-color: #121212; border-radius: 25px; height: auto; width: 80%">
       <div>
-        <svg style="color: #ff5646;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+        <svg style="color: #ff5646" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
           fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-point">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
         </svg>
-        <svg style="color: #f4bf4f;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+        <svg style="color: #f4bf4f" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
           fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-point">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
         </svg>
-        <svg style="color: #61c554;" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+        <svg style="color: #61c554" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
           fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-point">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
         </svg>
       </div>
-      <div class="mx-2" style="width: auto;"></div>
+      <div class="mx-2" style="width: auto"></div>
 
-      <pre style="font-family: 'Avenir Book', 'Sen', monospace; font-size: 1vh; color: white; white-space: pre-wrap;">
-<span style="color: #b499ee;">import</span> <span style="color: #c2caf1;">lombok.Data</span>;
-<span style="color: #b499ee;">import</span> <span style="color: #c2caf1;">lombok.NoArgsConstructor</span>;
-<span style="color: #b499ee;">import</span> <span style="color: #c2caf1;">java.util.List</span>;
+      <pre style="
+          font-family: 'Avenir Book', 'Sen', monospace;
+          font-size: 0.8rem;
+          color: white;
+          white-space: pre-wrap;
+        ">
+    <span style="color: #b499ee;">import</span> <span style="color: #c2caf1;">lombok.Data</span>;
+    <span style="color: #b499ee;">import</span> <span style="color: #c2caf1;">lombok.NoArgsConstructor</span>;
+    <span style="color: #b499ee;">import</span> <span style="color: #c2caf1;">java.util.List</span>;
 
-<span style="color: #b499ee;">{{'@Data'}}</span>
-<span style="color: #b499ee;">{{'@NoArgsConstructor'}}</span>
-<span style="color: #b499ee;">public class</span> <span style="color: #c2caf1;">Person</span> {{ '{' }}
-    <span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">name</span> = <span style="color: #9cdbfb;">"Wolfang Herrera"</span>;
-    <span style="color: #b499ee;">private int</span> <span style="color: #aab1d3;">age</span> = <span style="color: #d69166;">23</span>;
-    <span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">gender</span> = <span style="color: #9cdbfb;">"Male"</span>;
-    <span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">email</span> = <span style="color: #9cdbfb;">"{{'dev@wolfangdevs.com"'}}</span>;
-    <span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">phone</span> = <span style="color: #9cdbfb;">"+57 313 450 8305"</span>;
-    <span style="color: #b499ee;">private List&lt;String&gt;</span> <span style="color: #aab1d3;">languages</span> = List.of(<span style="color: #9cdbfb;">"English"</span>, <span style="color: #9cdbfb;">"Spanish"</span>);
-    <span style="color: #b499ee;">private List&lt;String&gt;</span> <span style="color: #aab1d3;">skills</span> = List.of(
-        <span style="color: #9cdbfb;">"SpringBoot"</span>, <span style="color: #9cdbfb;">"NodeJS"</span>, <span style="color: #9cdbfb;">"MFE"</span>, <span style="color: #9cdbfb;">"StencilJS"</span>,
-        <span style="color: #9cdbfb;">"Docker"</span>, <span style="color: #9cdbfb;">"NoSQL"</span>, <span style="color: #9cdbfb;">"AWS"</span>, <span style="color: #9cdbfb;">"Workflows"</span>,
-        <span style="color: #9cdbfb;">"Git"</span>, <span style="color: #9cdbfb;">"UnitTest"</span>, <span style="color: #9cdbfb;">"CleanCode"</span>
-    );
-    <span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">hobbies</span> = <span style="color: #9cdbfb;">"Video games, exploring new dish recipes and spend time with my family"</span>;
-{{ '}' }}
-
-<span style="color: #b499ee;">public class</span> <span style="color: #c2caf1;">Main</span> {{ '{' }}
-    <span style="color: #b499ee;">public static void</span> <span style="color: #50aac6;">main</span>(<span style="color: #b499ee;">String[]</span> <span style="color: #aab1d3;">args</span>) {{ '{' }}
-        <span style="color: #c2caf1;">Person</span> <span style="color: #aab1d3;">person</span> = <span style="color: #b499ee;">new</span> <span style="color: #c2caf1;">Person</span>();
-        <span style="color: #42859c;">System.out.println</span>(<span style="color: #aab1d3;">person</span>);
+    <span style="color: #b499ee;">{{'@Data'}}</span>
+    <span style="color: #b499ee;">{{'@NoArgsConstructor'}}</span>
+    <span style="color: #b499ee;">public class</span> <span style="color: #c2caf1;">Person</span> {{ '{' }}
+        <span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">name</span> = <span style="color: #9cdbfb;">"Wolfang Herrera"</span>;
+        <span style="color: #b499ee;">private int</span> <span style="color: #aab1d3;">age</span> = <span style="color: #d69166;">23</span>;
+        <span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">gender</span> = <span style="color: #9cdbfb;">"Male"</span>;
+        <span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">email</span> = <span style="color: #9cdbfb;">"{{'dev@wolfangdevs.com"'}}</span>;
+        <span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">phone</span> = <span style="color: #9cdbfb;">"+57 313 450 8305"</span>;
+        <span style="color: #b499ee;">private List&lt;String&gt;</span> <span style="color: #aab1d3;">languages</span> = List.of(<span style="color: #9cdbfb;">"English"</span>, <span style="color: #9cdbfb;">"Spanish"</span>);
+        <span style="color: #b499ee;">private List&lt;String&gt;</span> <span style="color: #aab1d3;">skills</span> = List.of(
+            <span style="color: #9cdbfb;">"SpringBoot"</span>, <span style="color: #9cdbfb;">"NodeJS"</span>, <span style="color: #9cdbfb;">"MFE"</span>, <span style="color: #9cdbfb;">"StencilJS"</span>,
+            <span style="color: #9cdbfb;">"Docker"</span>, <span style="color: #9cdbfb;">"NoSQL"</span>, <span style="color: #9cdbfb;">"AWS"</span>, <span style="color: #9cdbfb;">"Workflows"</span>,
+            <span style="color: #9cdbfb;">"Git"</span>, <span style="color: #9cdbfb;">"UnitTest"</span>, <span style="color: #9cdbfb;">"CleanCode"</span>
+        );
+        <span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">hobbies</span> = <span style="color: #9cdbfb;">"Video games, exploring new dish recipes and spend time with my family"</span>;
     {{ '}' }}
-{{ '}' }}
+
+    <span style="color: #b499ee;">public class</span> <span style="color: #c2caf1;">Main</span> {{ '{' }}
+        <span style="color: #b499ee;">public static void</span> <span style="color: #50aac6;">main</span>(<span style="color: #b499ee;">String[]</span> <span style="color: #aab1d3;">args</span>) {{ '{' }}
+            <span style="color: #c2caf1;">Person</span> <span style="color: #aab1d3;">person</span> = <span style="color: #b499ee;">new</span> <span style="color: #c2caf1;">Person</span>();
+        {{ '}' }}
+    {{ '}' }}
       </pre>
     </div>
   </div>
