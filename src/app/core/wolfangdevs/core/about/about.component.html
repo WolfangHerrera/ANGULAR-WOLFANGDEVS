@@ -27,76 +27,33 @@
             </div>
             <div class="mx-2" style="width: auto;"></div>
             <p class="text-wrap" style="font-family: 'Avenir Book', 'Sen', monospace; font-size: 1vh;">
-                <span style="color: #b499ee;">class</span><span style="color: #c2caf1;"> Person:</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">def</span> <span style="color: #50aac6;">
-                    __init__</span><span style="color: #708bd0;">(<span style="color: #d8b172;">self</span>)</span><span
-                    style="color: #708bd0;"></span>:<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
-                    style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
-                    style="color: #aab1d3;">name</span><span style="color: #84b7d3;"> = </span><span
-                    style="color: #9cdbfb;">'<span
-                        style="color: #a8cd76;">{{textComponent.classPerson.name}}</span>'</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
-                    style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
-                    style="color: #aab1d3;">age</span> <span style="color: #84b7d3;"> = </span><span
-                    style="color: #d69166;">{{textComponent.classPerson.age}}</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
-                    style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
-                    style="color: #aab1d3;">gender</span> <span style="color: #84b7d3;"> = </span><span
-                    style="color: #9cdbfb;">'<span
-                        style="color: #a8cd76;">{{textComponent.classPerson.gender}}</span>'</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
-                    style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
-                    style="color: #aab1d3;">phone</span> <span style="color: #84b7d3;"> = </span> <span
-                    style="color: #9cdbfb;">'<span
-                        style="color: #a8cd76;">{{textComponent.classPerson.phone}}</span>'</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
-                    style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
-                    style="color: #aab1d3;">languages</span> <span style="color: #84b7d3;"> = </span><span
-                    style="color: #708bd0;">[
-                    <span><span style="color: #9cdbfb;">'<span
-                                style="color: #a8cd76;">{{textComponent.classPerson.language[0]}}</span>', <span
-                                style="color: #9cdbfb;">'<span
-                                    style="color: #a8cd76;">{{textComponent.classPerson.language[1]}}</span>'</span></span></span>
-                    ]</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
-                    style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
-                    style="color: #aab1d3;">skills</span> <span style="color: #84b7d3;"> = </span><span
-                    style="color: #708bd0;">[
-                    <span>
-                        <span *ngFor="let skill of textComponent.classPerson.skills; let i = index">
-                            <span style="color: #9cdbfb;">'<span
-                                    style="color: #a8cd76;">{{textComponent.classPerson.skills[i]}}</span>'</span>
-                            <span *ngIf="i < textComponent.classPerson.skills.length - 1">, </span>
-                        </span>
-                    </span>
-                    ]</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span span
-                    style="color: #e77d8f;">self</span><span style="color: #9cdbfb;">.</span><span
-                    style="color: #aab1d3;">hobbies</span> <span style="color: #84b7d3;"> = </span> <span
-                    style="color: #9cdbfb;">'<span
-                        style="color: #a8cd76;">{{textComponent.classPerson.hobbies}}</span>'</span><br>
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">def</span> <span style="color: #50aac6;">
-                    __str__</span><span style="color: #708bd0;">(<span style="color: #d8b172;">self</span>)</span><span
-                    style="color: #708bd0;"></span>:<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b69bf1;">return
-                    f</span><span style="color: #9cbe6f;"><span
-                        style="color: #9cdbfb;">'</span><span>{{textComponent.returnStrClass[0]}}
-                        <span style="color: #6a84c5;">{{'{'}}<span span style="color: #e77d8f;">self</span><span
-                                style="color: #9cdbfb;">.</span><span
-                                style="color: #aab1d3;">name</span>{{'}'}}</span>{{textComponent.returnStrClass[1]}}<span><span
-                                style="color: #6a84c5;">{{'{'}}<span span style="color: #e77d8f;">self</span><span
-                                    style="color: #9cdbfb;">.</span><span
-                                    style="color: #aab1d3;">age</span>{{'}'}}</span></span>{{textComponent.returnStrClass[2]}}
-                        <span><span style="color: #6a84c5;">{{'{'}}<span span style="color: #e77d8f;">self</span><span
-                                    style="color: #9cdbfb;">.</span><span
-                                    style="color: #aab1d3;">hobbies</span>{{'}'}}</span></span>.</span><span
-                        style="color: #9cdbfb;">'</span></span><br>
-                <br>
-                <br>
-                <span style="color: #42859c;">print</span><span style="color: #708acf;">(Person())</span><br>
-                <span style="color: #b69bf1;">>>></span> {{textComponent.returnClass}}
+              <span style="color: #b499ee;">import</span> <span style="color: #c2caf1;">lombok.Data</span>;<br>
+              <span style="color: #b499ee;">import</span> <span style="color: #c2caf1;">lombok.NoArgsConstructor</span>;<br>
+              <span style="color: #b499ee;">import</span> <span style="color: #c2caf1;">java.util.List</span>;<br><br>
+            
+              <span style="color: #b499ee;">@Data</span><br>
+              <span style="color: #b499ee;">@NoArgsConstructor</span><br>
+              <span style="color: #b499ee;">public class</span> <span style="color: #c2caf1;">Person</span> {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">name</span> <span style="color: #84b7d3;">=</span> <span style="color: #9cdbfb;">"Wolfang Herrera"</span>;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b499ee;">private int</span> <span style="color: #aab1d3;">age</span> <span style="color: #84b7d3;">=</span> <span style="color: #d69166;">23</span>;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">gender</span> <span style="color: #84b7d3;">=</span> <span style="color: #9cdbfb;">"Male"</span>;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">email</span> <span style="color: #84b7d3;">=</span> <span style="color: #9cdbfb;">"dev@wolfangdevs.com"</span>;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">phone</span> <span style="color: #84b7d3;">=</span> <span style="color: #9cdbfb;">"+57 313 450 8305"</span>;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b499ee;">private List&lt;String&gt;</span> <span style="color: #aab1d3;">languages</span> <span style="color: #84b7d3;">=</span> List.of(<span style="color: #9cdbfb;">"English"</span>, <span style="color: #9cdbfb;">"Spanish"</span>);<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b499ee;">private List&lt;String&gt;</span> <span style="color: #aab1d3;">skills</span> <span style="color: #84b7d3;">=</span> List.of(<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdbfb;">"SpringBoot"</span>, <span style="color: #9cdbfb;">"NodeJS"</span>, <span style="color: #9cdbfb;">"MFE"</span>, <span style="color: #9cdbfb;">"StencilJS"</span>,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdbfb;">"Docker"</span>, <span style="color: #9cdbfb;">"NoSQL"</span>, <span style="color: #9cdbfb;">"AWS"</span>, <span style="color: #9cdbfb;">"Workflows"</span>,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdbfb;">"Git"</span>, <span style="color: #9cdbfb;">"UnitTest"</span>, <span style="color: #9cdbfb;">"CleanCode"</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;);<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b499ee;">private String</span> <span style="color: #aab1d3;">hobbies</span> <span style="color: #84b7d3;">=</span> <span style="color: #9cdbfb;">"Video games, exploring new dish recipes and spend time with my family"</span>;<br>
+                }<br><br>
+                
+                <span style="color: #b499ee;">public class</span> <span style="color: #c2caf1;">Main</span> {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #b499ee;">public static void</span> <span style="color: #50aac6;">main</span>(<span style="color: #b499ee;">String[]</span> <span style="color: #aab1d3;">args</span>) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #c2caf1;">Person</span> <span style="color: #aab1d3;">person</span> <span style="color: #84b7d3;">=</span> <span style="color: #b499ee;">new</span> <span style="color: #c2caf1;">Person</span>();<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #42859c;">System.out.println</span>(<span style="color: #aab1d3;">person</span>);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            }
             </p>
         </div>
     </div>
