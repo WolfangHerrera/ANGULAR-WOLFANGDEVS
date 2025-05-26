@@ -1,9 +1,9 @@
 <section class="container my-5 py-5">
     <div class="row" style="width: auto;">
         <div class="col-12 pb-3 text-center">
-            <h2>LATEST PROJECT</h2>
+            <h2>{{textComponent.title}}</h2>
         </div>
-        <div *ngFor="let item of arrayDataPortfolio" class="col-md-4 col-sm-12 px-3 mb-3 text-center"
+        <div *ngFor="let item of textComponent.items" class="col-md-4 col-sm-12 px-3 mb-3 text-center"
             style="height: 100%;">
             <div class="card bg-dark text-white rounded-5">
                 <img src="{{item.imgUrl}}" class="card-img rounded-5" alt="" height="auto" width="auto">
@@ -15,8 +15,7 @@
             <div class="px-2">
                 <a href="{{item.urlProject}}">
                     <button type="button" class="btn rounded-3 mx-2 my-3 px-4"
-                        style="background-color: #5c469c; color: white;"><i class="bi bi-box-arrow-right"></i> VISIT
-                        PROJECT</button>
+                        style="background-color: #5c469c; color: white;"><i class="bi bi-box-arrow-right"></i>{{textComponent.buttonText}}</button>
                 </a>
                 <a href="{{item.urlGithub}}">
                     <button type="button" class="btn rounded-3 mx-2 my-3 px-4"

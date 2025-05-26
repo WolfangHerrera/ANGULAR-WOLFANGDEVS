@@ -6,6 +6,7 @@ import { contactMessages } from "./utils/type/messages/contact/message.type";
 import { experienceMessages } from "./utils/type/messages/experience/message.type";
 import { footerMessages } from "./utils/type/messages/shared/footer/message.type";
 import { headerMessages } from "./utils/type/messages/shared/header/message.type";
+import { portfolioMessages } from "./utils/type/messages/portfolio/message.type";
 
 @Component({
   selector: "app-wolfangdevs",
@@ -19,6 +20,7 @@ export class WolfangdevsComponent implements OnInit {
   textComponentExperience!: experienceMessages;
   textComponentContact!: contactMessages;
   textComponentFooter!: footerMessages;
+  textComponentPortfolio!: portfolioMessages;
   constructor(
     private elementRef: ElementRef,
     private readonly languageService: LanguageService
@@ -36,6 +38,7 @@ export class WolfangdevsComponent implements OnInit {
       this.languageService.returnExperienceMessages();
     this.textComponentContact = this.languageService.returnContactMessages();
     this.textComponentFooter = this.languageService.returnFooterMessages();
+    this.textComponentPortfolio = this.languageService.returnPortfolioMessages();
   }
 
   scrollDownToComponent(component: string) {

@@ -23,6 +23,8 @@ import {
   EN_HEADER_MESSAGES,
   ES_HEADER_MESSAGES,
 } from "../../utils/messages/shared/header/message";
+import { EN_PORTFOLIO_MESSAGES, ES_PORTFOLIO_MESSAGES } from "../../utils/messages/portfolio/message";
+import { portfolioMessages } from "../../utils/type/messages/portfolio/message.type";
 import { languageType } from "../../utils/type/language.type";
 import { bodyMessages } from "../../utils/type/messages/body/message.type";
 import { headerMessages } from "../../utils/type/messages/shared/header/message.type";
@@ -76,5 +78,11 @@ export class LanguageService {
     return this.currentLanguage === "EN"
       ? EN_FOOTER_MESSAGES
       : ES_FOOTER_MESSAGES;
+  }
+
+  returnPortfolioMessages(): portfolioMessages {
+    return this.currentLanguage === "EN"
+      ? EN_PORTFOLIO_MESSAGES
+      : ES_PORTFOLIO_MESSAGES;
   }
 }
